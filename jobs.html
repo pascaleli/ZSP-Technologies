@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jobs & Careers | Zamplix Innovations</title>
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="assets/images/Zziem_Logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/glightbox/dist/css/glightbox.min.css">
+
+    <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+        <style>
+        .modal-content {
+            background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
+            box-shadow: 0px 20px 40px #00000070;
+            border: 1px solid #3b3b3b;
+            color: #fff;
+        }
+
+        .modal-header {
+            color: #fecc02;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4HF59VK83"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C4HF59VK83');
+    </script>
+</head>
+
+<body>
+        <!-- Cookie Consent CSS START -->
+<style>
+    .modal-content {
+        background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
+        box-shadow: 0px 20px 40px #00000070;
+        border: 1px solid #3b3b3b;
+        color: #fff;
+    }
+
+    .modal-header {
+        color: #00a700;
+    }
+
+    .cookie-banner {
+        background: linear-gradient(to bottom, #1d4b1d, #010a01);
+        ;
+        color: #fff;
+        z-index: 1000;
+        position: fixed;
+        /* bottom: 0; */
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        transition: 1000ms;
+    }
+
+    .cookie-banner button:hover,
+    .cookie-banner button:focus {
+        color: #2c5f2d !important;
+        border-color: #fff !important;
+        background-color: #fff !important;
+    }
+
+    .cookie-banner button {
+        border-color: #fff !important;
+    }
+
+    .cookie-banner button,
+    .cookie-banner a {
+        color: #fff !important;
+    }
+
+    #cookieModalTrigBtn {
+        padding: 15px;
+    }
+
+    #cookieModalTrigBtn:hover {
+        background: transparent !important;
+    }
+
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    .accordion-body {
+        background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
+        color: #fff;
+    }
+
+    .accordion-header {
+        background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
+        color: #00a700;
+    }
+
+    .accordion-button::after {
+        display: none;
+    }
+
+    .accordion-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #282d21;
+        color: #00a700;
+        box-shadow: none;
+    }
+
+    .accordion-button.collapsed {
+        background-color: #282d21;
+        color: #fff;
+        box-shadow: none;
+    }
+
+    .form-check-input {
+        padding: 15px 30px;
+    }
+
+    .form-check-input:checked {
+        background-color: #00a700;
+        border-color: #010a01;
+    }
+
+    .form-switch .form-check-input:focus {
+        box-shadow: none;
+    }
+</style>
+
+
+<!-- Cookie Consent BANNER START -->
+<div id="cookieBanner" class="cookie-banner p-4 pb-1">
+    <div class="row">
+        <div class="col-md-8">
+            <p class="fw-light">
+                We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze
+                our
+                traffic. By clicking <strong>ACCEPT</strong>, you consent to our use of cookies.
+            </p>
+        </div>
+        <div class="col-md-4 ">
+            <div class="d-flex flex-column">
+                <div
+                    class="d-inline-flex flex-wrap justify-content-between  justify-content-md-around align-items-center mt-2">
+                    <button id="cookieConsentBtn" class="btn btn-outline-light text-white">Accept all</button>
+                    <button id="cookieRejectBtn" class="btn btn-outline-light text-white">Reject Optional</button>
+
+                </div>
+                <div class="mt-3 d-flex justify-content-end">
+                    <button id="cookieModalTrigBtn" type="button" class="text-white fw-bold btn border-0"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20.5 4c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 6c1.86.5 4 .83 6 1v12h2v-6h2v6h2V7c2-.17 4.14-.5 6-1zM12 4c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2M7 24h2v-2H7zm4 0h2v-2h-2zm4 0h2v-2h-2z" />
+                        </svg> Manage Cookies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Cookie Consent BANNER END -->
+
+<!-- Cookie Consent MODAL START -->
+
+<!-- Modal -->
+<div class="modal fade" id="cookieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="cookieModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-center" id="cookieModalLabel">Manage cookies</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <small class="d-block mb-3 text-light">
+                    This site uses cookies. We use cookies mainly to improve and analyze your experience on our websites
+                    and for marketing purposes. Because we respect your right to privacy, you can choose not to allow
+                    some types of cookies. Click on the differenct category headings to find out more and change your
+                    default settings. Blocking some types of cookies may negatively impact your experience on the site
+                    and limit the service we are able to provide.
+                </small>
+
+                <div class="tf__faq_accordion">
+                    <div class="accordion" id="cookieAccordion">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="heading-One">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-One" aria-expanded="true" aria-controls="collapse-One">
+                                    Necessary
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse-One" class="accordion-collapse collapse show"
+                                aria-labelledby="heading-One" data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-stretch">
+                                        <p>
+                                            These cookies are necessary for the website to function and cannot be
+                                            switched off in our systems. They are usually only set in response to
+                                            actions made by you which amount to a request for services, such as setting
+                                            your privacy preferences, logging in, or filling in forms.
+                                        </p>
+                                        <div class="w-25">
+                                            <div class="float-end ms-3">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="necessary-checkbox" checked>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="heading-Two">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-Two" aria-expanded="true" aria-controls="collapse-Two">
+                                    Analytics
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse-Two" class="accordion-collapse collapse" aria-labelledby="heading-Two"
+                                data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-stretch">
+                                        <p>
+                                            These cookies help us to understand how visitors engage with the website. We
+                                            may use a set of cookies to collect information and report site usage
+                                            statistics. In addition to reporting site usage statistics, data collected
+                                            may also be used, together with some of the advertising cookies described,
+                                            to help show more relevant ads across the web and to measure interactions
+                                            with the ads we show.
+                                        </p>
+                                        <div class="w-25">
+                                            <div class="float-end ms-3">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="analytics-checkbox" checked>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="heading-Three">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-Three" aria-expanded="true"
+                                    aria-controls="collapse-Three">
+                                    Advertisment
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse-Three" class="accordion-collapse collapse"
+                                aria-labelledby="heading-Three" data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-stretch">
+                                        <p>
+                                            We use cookies to make our ads more engaging and valuable to site visitors.
+                                            Some common applications of cookies are to select advertising based on
+                                            what's relevant to a user; to improve reporting on ad campaign performance;
+                                            and to avoid showing ads the user has already seen.
+                                        </p>
+                                        <div class="w-25">
+                                            <div class="float-end ms-3">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="advert-checkbox" checked>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="heading-Four">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-Four" aria-expanded="true"
+                                    aria-controls="collapse-Four">
+                                    Functionality
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </button>
+                            </h2>
+                            <div id="collapse-Four" class="accordion-collapse collapse"
+                                aria-labelledby="heading-Four" data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-stretch">
+                                        <p>
+                                            We use a set of cookies that are optional for the website to function. They
+                                            are usually only set in response to information provided to the website to
+                                            personalize and optimize your experience as well as remember your chat
+                                            history.
+                                        </p>
+                                        <div class="w-25">
+                                            <div class="float-end ms-3">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="function-checkbox" checked>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer border-0">
+                <button id="saveCookieSettingBtn" type="button" class="btn btn-outline-light"
+                    data-bs-dismiss="modal">Save
+                    settings</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Cookie Consent MODAL END -->
+
+<!-- Cookie Consent JS START -->
+<script>
+    const cookieBanner = document.getElementById('cookieBanner');
+    const cookieConsentBtn = document.getElementById('cookieConsentBtn');
+    const cookieRejectBtn = document.getElementById('cookieRejectBtn');
+    const saveCookieSettingBtn = document.getElementById('saveCookieSettingBtn');
+    const cookieModalTrigBtn = document.getElementById('cookieModalTrigBtn');
+
+    const cookieAgreed = Boolean(localStorage.getItem('cookie_consent'));
+    // const cookieReject = Boolean(localStorage.getItem('cookie_reject'));
+
+    const hideCookieBanner = (e) => cookieBanner.style.bottom = '-100%';
+    const agreeToCookies = (e) => {
+        localStorage.setItem('cookie_consent', true);
+        hideCookieBanner();
+    };
+
+    setTimeout(() => {
+        // Only show cookie consent banner
+        // if user has not agreed.
+        if (cookieAgreed !== true) {
+            cookieBanner.style.bottom = '0';
+        }
+    }, 5000);
+
+    cookieConsentBtn.addEventListener('click', agreeToCookies);
+    cookieRejectBtn.addEventListener('click', agreeToCookies);
+    saveCookieSettingBtn.addEventListener('click', agreeToCookies);
+
+    cookieModalTrigBtn.addEventListener('click', (event) => {
+        $('#cookieModal').modal('show');
+    });
+</script>
+<!-- Cookie Consent JS END -->
+
+
+    <div class="page-wrapper">
+        <div id="loader">
+            <span><img src="assets/images/Zziem_Logo.jpeg" alt=""></span>
+        </div>
+        <section class="page-header">
+    <div class="container-fluiid">
+        <nav class="navbar sticky-top navbar-expand-lg content-width">
+            <div class="container-fluid">
+                <a class="navbar-brand" data-aos="fade-in" href="jobs.html"><img class="img-fluid"
+                        src="assets/images/Zziem_Logo.jpeg"
+                        alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="menu-icon fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center z-1" data-aos="fade-in">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page"
+                                href="index.html">Home</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle "
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Company
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="company/about.html">About us</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="company/team.html">Leadership</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="company/impact.html">Impact</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle "
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="services/ai-and-big-data.html">AI & Big Data</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="services/platforms-and-app-development.html">Platforms & App Development</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="services/value-added-services.html">Value Added Services</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="services/It-consultancy.html">IT Consultancy &
+                                        Managed Services</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle "
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li>
+                                    <a class="dropdown-item "
+                                        href="resources/documentations.html">Documentation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="partners.html">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="jobs.html">Jobs & Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn-light-nav d-flex align-items-center "
+                                href="contact.html">
+                                Let's talk<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7" />
+                                </svg></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<!--page wrapper css-->
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        background-color: #add8e6; /* Light blue background */
+    }
+
+    .navbar-nav .nav-link {
+        color: #000; /* Black text color for visibility */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #0056b3; /* Darker blue on hover */
+    }
+
+    .navbar-brand img {
+        max-height: 90px; /* Limit logo height */
+    }
+
+    .btn-light-nav {
+        background-color: #ffffff; /* White background for button */
+        border: none;
+        color: #007bff; /* Blue text color */
+        border-radius: 20px; /* Rounded button */
+    }
+
+    .btn-light-nav:hover {
+        background-color: #e7f1ff; /* Light blue on hover */
+    }
+</style>
+
+            <!--ai start-->
+    <section class="jobs mb-3">
+        <div class="container-fluid">
+            <div class="jobs-content content-width">
+                <h2 class="title mb-4" data-aos="fade-in">Discover your place at Zziem Technologies</h2>
+                <a href="#" target="__blank" class="btn btn-light mb-4">Explore open roles <svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="m9 5l7 7l-7 7" />
+                    </svg></a>
+                <div class="video-wrapper">
+                    <video class="w-100" muted autoplay src="assets/video/nss.mp4"></video>
+                    <a href="assets/video/nss.mp4" class="play glightbox3" data-autoplay="true"
+                        data-type="video">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#00a700"
+                            class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M11.38 8.753l-5.476 3.128a.5.5 0 0 1-.804-.4V5.52a.5.5 0 0 1 .804-.4l5.476 3.128a.5.5 0 0 1 0 .847z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ai end-->
+    <div class="row" style="justify-content: center;">
+        <div class="col-md-4" style="margin-bottom: 30px;">
+            <div class="card" style="border: none; border-radius: 10px; overflow: hidden; background-color: #f7f9fc; transition: transform 0.3s;">
+                <img src="assets/images/Zziem_Logo.jpeg" alt="" style="width: 100%; height: auto;">
+                <div class="card-body" style="padding: 20px;">
+                    <h3 style="color: #2980B9;">Innovative Projects</h3>
+                    <p style="color: #777;">Join a community where your ideas matter. Work on projects that make a difference in the world.</p>
+                </div>
+            </div>
+            <a href="#" target="_blank" class="btn" style="display: block; margin-top: 10px; background-color: #2980B9; color: white; border-radius: 5px; padding: 10px;">Join Our Team</a>
+        </div>
+
+        <div class="col-md-4" style="margin-bottom: 30px;">
+            <div class="card" style="border: none; border-radius: 10px; overflow: hidden; background-color: #f7f9fc;">
+                <img src="assets/all images/large.jpg" alt="" style="width: 100%; height:auto;">
+                <div class="card-body" style="padding: 20px;">
+                    <h3 style="color:#27AE60;">Collaborate with Experts</h3>
+                    <p style="color:#777;">Be part of a culture that values authenticity and diverse perspectives. Your voice matters here!</p>
+                </div>
+            </div>
+            <a href="#" target="_blank" class="btn" style="display:block;margin-top :10px;background-color:#27AE60;color:white;border-radius :5px;padding :10px;">Join Us Now</a>
+        </div>
+
+        <div class="col-md-4" style="margin-bottom: 30px;">
+            <div class="card" style="border:none;border-radius :10px;overflow:hidden;background-color:#f7f9fc;">
+                <img src="assets/images/Zziem_Logo.jpeg" alt="" style="width :100%;height:auto;">
+                <div class="card-body" style="padding :20px;">
+                    <h3 style="color:#E67E22;">Core Values That Inspire</h3>
+                    <p style="color:#777;">Join a company that champions Service, Innovation, and Team Spirit—values that drive success!</p>
+                </div>
+            </div>
+            <a href="#" target="_blank" class="btn" style="display:block;margin-top :10px;background-color:#E67E22;color:white;border-radius :5px;padding :10px;">Be Valuable</a>
+        </div>
+    </div>
+</div>
+    <section class="newsletter">
+    <div class="container-fluid">
+        <div class="newsletter-contents">
+            <hr class="line">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-5 mb-4">
+                    <span>Stay up to date with our news, ideas and updates.</span>
+                </div>
+                <div class="col-md-5">
+                    <form action="https://zziem.com/contact/newsletter" method="POST">
+                        <input type="hidden" name="_token" value="fNZxxIwJmUu78r31dwv0UvD0nbkqFbWBeED8mRjQ" autocomplete="off">                        <div class="input-container">
+                            <div class="input-group mb-3">
+                                <input type="email" name="email" class="form-control newsletter-input"
+                                    placeholder="Enter Your Email Address" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2">
+                                <button class="btn-newsletter" type="submit" id="button-addon2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                        viewBox="0 0 16 16">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer section start-->
+<section class="footer" style="background-color: #2c3e50; color: #ffffff; padding: 40px 0; font-family: Arial, sans-serif;">
+    <div class="container-fluid">
+        <div class="footer-content">
+            <div class="row text-center">
+                <!-- Pages Section -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="title" style="font-size: 1.5rem; margin-bottom: 20px; text-transform: uppercase;">Pages</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li class="nav-link mb-2"><a href="index.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">Home</a></li>
+                        <li class="nav-link mb-2"><a href="company/about.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">About Us</a></li>
+                        <li class="nav-link mb-2"><a href="company/team.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">Leadership</a></li>
+                        <li class="nav-link mb-2"><a href="company/impact.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">Impact</a></li>
+                        <li class="nav-link mb-2"><a href="contact.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">Let's Talk</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Section -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="title" style="font-size: 1.5rem; margin-bottom: 20px; text-transform: uppercase;">Services</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li class="nav-link mb-2"><a href="services/ai-and-big-data.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">AI and Big Data</a></li>
+                        <li class="nav-link mb-2"><a href="services/platforms-and-app-development.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">Platforms and App Development</a></li>
+                        <li class="nav-link mb-2"><a href="services/value-added-services.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">Value Added Services</a></li>
+                        <li class="nav-link mb-2"><a href="services/It-consultancy.html" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">IT Consultancy & Managed Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Info Section -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="title" style="font-size: 1.5rem; margin-bottom: 20px; text-transform: uppercase;">Info</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li class="nav-link mb-2"><a href="partners.html" style="color: #ffffff;text-decoration:none;transition:.3s;">Partners</a></li>
+                        <li class="nav-link mb-2"><a href="blog.html" style="color: #ffffff;text-decoration:none;transition:.3s;">Blog</a></li>
+                        <li class="nav-link mb-2"><a href="resources/documentations.html" style="color: #ffffff;text-decoration:none;transition:.3s;">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <span style="
+                        display:block;
+                        margin-bottom: 20px;
+                        font-size: 1rem;
+                        font-weight:bold;
+                    ">© 2024 Developed by Zamplix Technologies</span>
+
+                    <!-- Social Media Links -->
+                    <h3 class="title" style="
+                        font-size: 1.5rem;
+                        margin-bottom: 20px;
+                        text-transform: uppercase;
+                    ">Connect with Us</h3>
+                    <ul class='socials' style="
+                        list-style-type:none;
+                        padding-left: 0;
+                        display:flex;
+                        justify-content:center;
+                        gap: 30px;
+                    ">
+                        <!-- YouTube -->
+                        <li><a href="https://youtube.com/@zamplixtechnologies3546?si=JwStNtUw0TY6daCd" target="_blank" aria-label='YouTube' style="
+                                color:#ffffff;
+                                transition:.3s;" onmouseover='this.style.color="#e74c3c"' onmouseout='this.style.color="#ffffff"' >
+                                <!-- SVG Icon for YouTube -->
+                                📹
+                            </a>
+                            <span>YouTube</span>
+                        </li>
+
+                        <!-- X (formerly Twitter) -->
+                        <li><a href="https://x.com/zamplix?s=21" target="_blank" aria-label='Twitter' style="
+                                color:#ffffff;
+                                transition:.3s;" onmouseover='this.style.color="#e74c3c"' onmouseout='this.style.color="#ffffff"' >
+                                <!-- SVG Icon for Twitter -->
+                                🐦
+                            </a>
+                            <span>Twitter</span>
+                        </li>
+
+                        <!-- Facebook -->
+                        <li><a href="https://www.facebook.com/ZamplixTechnologies?mibextid=LQQJ4d" target="_blank" aria-label='Facebook' style="
+                                color:#ffffff;
+                                transition:.3s;" onmouseover='this.style.color="#e74c3c"' onmouseout='this.style.color="#ffffff"' >
+                                <!-- SVG Icon for Facebook -->
+                                📘
+                            </a>
+                            <span>Facebook</span>
+                        </li>
+
+                        <!-- Instagram -->
+                        <li><a href="https://www.instagram.com/zamplixtechnologies?igsh=MTNvYmhxdDJxOTloMg%3D%3D&utm_source=qr" target="_blank" aria-label='Instagram' style="
+                                 color:#ffffff;
+                                 transition:.3s;" onmouseover='this.style.color="#e74c3c"' onmouseout='this.style.color="#ffffff"' >
+                                 <!-- SVG Icon for Instagram -->
+                                📷
+                            </a>
+                            <span>Instagram</span>
+                        </li>
+
+                         <!-- LinkedIn -->
+                         <li><a href="https://www.linkedin.com/company/zamplix-technology/" target="_blank" aria-label='LinkedIn' style="
+                                 color:#ffffff;
+                                 transition:.3s;" onmouseover='this.style.color="#e74c3c"' onmouseout='this.style.color="#ffffff"' >
+                                 <!-- SVG Icon for LinkedIn -->
+                                 💼
+                             </a>
+                             <span>LinkedIn</span>
+                         </li>  
+                     </ul> 
+                 </div>
+             </div> 
+         </div> 
+     </div> 
+ </section>
+
+<style>
+    /* Add hover effect for all anchor tags */
+    .footer a:hover {
+        color: #e74c3c !important;
+        text-decoration: underline;
+    }
+    .footer h3.title {
+        border-bottom: 2px solid #e74c3c;
+        display:inline-block;
+        padding-bottom:10px;
+    }
+</style>
+<!--footer section end-->
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://snwolley.ai/static/js/chat-widget.min.js"></script>
+    
+
+
+
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 80, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 200, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        const lightbox1 = GLightbox({
+            selector: '.glightbox1'
+        });
+        const lightbox2 = GLightbox({
+            selector: '.glightbox2'
+        });
+
+        const glightbox3 = GLightbox({
+            selector: '.glightbox3'
+        });
+    </script>
+
+    
+
+
+
+</body>
+
+</html>

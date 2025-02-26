@@ -1,0 +1,2637 @@
+/* For Extremely Large Screens */
+@media screen and (min-width: 1920px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .navbar-brand img {
+        height: 120px;
+    }
+
+    .navbar .nav-link {
+        margin: 0px 20px;
+    }
+}
+
+/* For Large Screens */
+@media screen and (max-width: 1919px) and (min-width: 1200px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .navbar .nav-link {
+        margin: 0px 10px;
+        font-size: 16px;
+    }
+}
+
+/* For Medium Screens */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .btn {
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        margin: 0px 20px;
+    }
+
+    .hero-content {
+        height: 500px;
+    }
+
+    .hero-content .hero-blur-image {
+        height: 500px;
+        width: 100%;
+    }
+
+    .hero-content .hero-blur-image img {
+        height: 500px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .about-desc-content .description {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .mantra .mantra-content .mantra-description {
+        text-align: center;
+    }
+
+    .mantra .mantra-content .mantra-description .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .who-we-are .who-we-are-content .subtitle {
+        font-size: 26px;
+    }
+
+    .network .network-content .card .title {
+        font-size: 26px;
+    }
+
+    .newsletter .newsletter-contents .row .col-md-5 span {
+        font-size: 18px;
+    }
+
+    .newsletter-input {
+        padding: 11px 16px;
+    }
+
+    .contact .contact-form .card .content {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+
+    .documents .documents-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .desc {
+        padding: 10px;
+    }
+
+    .business .business-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .docs {
+        padding: 0;
+    }
+
+    .business .business-content .docs {
+        padding: 0px;
+    }
+
+    .partners .partners-content .partners-tabs .btn-tab {
+        width: 300px;
+    }
+
+    .btn-newsletter {
+        padding: 11px 8px;
+    }
+
+    .about-content {
+        padding: 80px 20px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-newsletter svg {
+        height: 35px;
+        width: 35px
+    }
+
+    .services .services-content .section-title {
+        font-size: 26px;
+    }
+
+    .ai .ai-content .title,
+    .platforms .platforms-content .title,
+    .value-added .value-added-content .title,
+    .consultancy .consultancy-content .title {
+        font-size: 30px;
+    }
+
+    .ai .ai-content .description,
+    .platforms .platforms-content .description,
+    .value-added .value-added-content .description,
+    .consultancy .consultancy-content .description {
+        padding: 0;
+    }
+
+    .value-added-features .features-list .card .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-added-features .features-list .card .content img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .consultancy-desc .services ul li img {
+        height: auto;
+    }
+
+    .team .team-content .subtitle {
+        font-size: 20px;
+    }
+
+
+
+    .impact .impact-content .content {
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .impact .impact-content .soc {
+        display: flex;
+          align-items: center;
+          gap: 20px;
+    }
+
+    .impact .impact-content .buttons {
+        margin-top: 20px;
+    }
+
+    .impact .impact-content .buttons .btn-primary {
+        padding: 8px 50px;
+    }
+    .valued .valued-content .valued-tabs .ussd img{
+        height: auto;
+    }
+
+    .team .team-content .team-tabs .btn-tab {
+        width: 300px;
+        padding: 8px 20px;
+    }
+
+    .blog-search input{
+        width: 100%;
+    }
+
+    .blog-search input::placeholder{
+        font-size: 14px;
+    }
+
+
+    .team-list .row .card .details .name {
+        font-size: 17px;
+    }
+
+    .network .network-content .col-md-10 .card img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .network .network-content .col-md-2 .card {
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .title {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-content .description {
+        color: var(--text-light);
+        font-size: 1rem;
+
+    }
+
+    .contact .contact-form form .form-group .card .content {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .contact .contact-form form .form-group p {
+        color: var(--text-light);
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-form form .form-group .card .content .submit-btn {
+        padding: 2px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer-content .disclaimer-image img {
+        height: 300px;
+    }
+
+    .services-slide .services-slide-content {
+        padding: 40px;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .img-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .quote {
+        display: none;
+    }
+
+    .about-desc-content .title {
+        font-size: 26px;
+    }
+
+    .mantra .mantra-content .mantra-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .description {
+        font-size: 18px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content .title {
+        font-size: 19px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content ul .item {
+        font-size: 18px;
+    }
+
+    .testimonials .testimonials-contents .section-title {
+        font-size: 26px;
+    }
+
+    .testimonials .testimonials-contents .section-subtitle {
+        font-size: 20px;
+    }
+
+    .footer .footer-content .card {
+        padding: 35px;
+    }
+
+    .partners .partners-content .subtitle {
+        padding: 10px;
+    }
+
+    .partners-list {
+        padding: 0px;
+    }
+
+    .consultancy-desc .services {
+        padding: 0;
+    }
+
+    .consultancy-desc .services .card {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        width: calc(100% - 40px);
+        gap: 20px;
+    }
+
+    .consultancy-desc .services .card .divider {
+        display: none;
+    }
+
+    .consultancy-desc .services .card img {
+        height: auto;
+        width: 90px;
+    }
+
+    .consultancy-desc .services .card h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    ƒ .about-content {
+        padding: 35px;
+    }
+
+    .about-desc-content {
+        padding: 35px;
+    }
+
+    .hero-overlay-content .row .col-md-6 {
+        margin-top: -10px;
+        text-align: left;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        font-size: 17px;
+    }
+
+    .hero-overlay-content {
+        position: absolute;
+        top: 200px;
+    }
+
+    .hero-overlay-content .row .col-md-6 span {
+        color: var(--text-light);
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        color: var(--text-light);
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .hero-overlay-content .row .col-md-6 .hero-right-img img {
+        object-fit: cover;
+        height: auto;
+    }
+}
+
+/* For Small Screens */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0 15px;
+    }
+
+    .navbar-nav {
+        background: linear-gradient(130.08deg, #31352c 0%, #111111 100%);
+        box-shadow: 0px 20px 40px #00000070;
+        border: 1px solid #3b3b3b;
+        margin-top: 10px;
+        z-index: 999;
+        border-radius: 20px;
+        padding: 30px 0;
+
+    }
+
+    .btn {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+
+    .hero-content {
+        height: 550px;
+    }
+
+    .hero-content .hero-blur-image {
+        height: 550px;
+        width: 100%;
+    }
+
+    .hero-content .hero-blur-image img {
+        height: 550px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .about-desc-content .description {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .mantra .mantra-content .mantra-description {
+        text-align: center;
+    }
+
+    .mantra .mantra-content .mantra-description .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .who-we-are .who-we-are-content .subtitle {
+        font-size: 26px;
+    }
+
+    .network .network-content .card .title {
+        font-size: 26px;
+    }
+
+    .newsletter .newsletter-contents .row .col-md-5 span {
+        font-size: 18px;
+    }
+
+    .newsletter-input {
+        padding: 11px 16px;
+    }
+
+    .contact .contact-form .card .content {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+
+    .documents .documents-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .desc {
+        padding: 10px;
+    }
+
+    .business .business-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .docs {
+        padding: 0;
+    }
+
+    .business .business-content .docs {
+        padding: 0px;
+    }
+
+    .partners .partners-content .partners-tabs .btn-tab {
+        width: 300px;
+    }
+
+    .btn-newsletter {
+        padding: 11px 8px;
+    }
+
+    .about-content {
+        padding: 80px 20px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-newsletter svg {
+        height: 35px;
+        width: 35px
+    }
+
+    .services .services-content .section-title {
+        font-size: 26px;
+    }
+
+    .ai .ai-content .title,
+    .platforms .platforms-content .title,
+    .value-added .value-added-content .title,
+    .consultancy .consultancy-content .title {
+        font-size: 30px;
+    }
+
+    .ai .ai-content .description,
+    .platforms .platforms-content .description,
+    .value-added .value-added-content .description,
+    .consultancy .consultancy-content .description,
+    .value-added .value-added-content .description {
+        padding: 0;
+    }
+
+    .value-added-features .features-list .card .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-added-features .features-list .card .content img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .consultancy-desc .services ul li img {
+        height: auto;
+    }
+
+    .team .team-content .subtitle {
+        font-size: 20px;
+    }
+
+
+
+    .impact .impact-content .content {
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .impact .impact-content .soc {
+        display: flex;
+          align-items: center;
+          gap: 20px;
+    }
+
+    .impact .impact-content .buttons {
+        margin-top: 20px;
+    }
+
+    .impact .impact-content .buttons .btn-primary {
+        padding: 8px 50px;
+    }
+    .valued .valued-content .valued-tabs .ussd img{
+        height: auto;
+    }
+
+    .team .team-content .team-tabs .btn-tab {
+        width: 300px;
+        padding: 8px 20px;
+    }
+
+    .blog-search input{
+        width: 100%;
+    }
+
+    .blog-search input::placeholder{
+        font-size: 14px;
+    }
+
+
+    .team-list .row .card .details .name {
+        font-size: 17px;
+    }
+
+    .network .network-content .col-md-10 .card img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .network .network-content .col-md-2 .card {
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .title {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-content .description {
+        color: var(--text-light);
+        font-size: 1rem;
+
+    }
+
+    .contact .contact-form form .form-group .card .content {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .contact .contact-form form .form-group p {
+        color: var(--text-light);
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-form form .form-group .card .content .submit-btn {
+        padding: 2px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer-content .disclaimer-image img {
+        height: 300px;
+    }
+
+    .services-slide .services-slide-content {
+        padding: 40px;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .img-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .quote {
+        display: none;
+    }
+
+    .about-desc-content .title {
+        font-size: 26px;
+    }
+
+    .mantra .mantra-content .mantra-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .description {
+        font-size: 18px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content .title {
+        font-size: 19px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content ul .item {
+        font-size: 18px;
+    }
+
+    .testimonials .testimonials-contents .section-title {
+        font-size: 26px;
+    }
+
+    .testimonials .testimonials-contents .section-subtitle {
+        font-size: 20px;
+    }
+
+    .footer .footer-content .card {
+        padding: 35px;
+    }
+
+    .partners .partners-content .subtitle {
+        padding: 10px;
+    }
+
+    .partners-list {
+        padding: 0px;
+    }
+
+    .consultancy-desc .services {
+        padding: 0;
+    }
+
+    .consultancy-desc .services .card {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        width: calc(100% - 40px);
+        gap: 20px;
+    }
+
+    .consultancy-desc .services .card .divider {
+        display: none;
+    }
+
+    .consultancy-desc .services .card img {
+        height: auto;
+        width: 90px;
+    }
+
+    .consultancy-desc .services .card h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 35px;
+    }
+
+    .about-desc-content {
+        padding: 35px;
+    }
+
+    .hero-overlay-content .row .col-md-6 {
+        margin-top: -10px;
+        text-align: left;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        font-size: 17px;
+    }
+
+    .hero-overlay-content {
+        position: absolute;
+        top: 200px;
+    }
+
+    .hero-overlay-content .row .col-md-6 span {
+        color: var(--text-light);
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .hero-overlay-content .row .col-md-6 .hero-right-img img {
+        display: none;
+    }
+
+
+
+    /* about section start*/
+
+
+    .about-content .row .col-md-4 .card {
+        padding: 15px 24px;
+        width: 100%;
+    }
+
+    .about-content .row .col-md-4 .card .card-line {
+        width: 100px;
+        height: 3px;
+    }
+
+    .about-content .row .col-md-4 .card .card-title {
+        font-size: 24px;
+    }
+
+    .about-content .row .col-md-4 .card .card-content {
+        font-size: 16px;
+    }
+
+    /* about section end*/
+}
+
+/* For Extra Small Screens */
+@media screen and (max-width: 767px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0 15px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav {
+        background: linear-gradient(130.08deg, #31352c 0%, #111111 100%);
+        box-shadow: 0px 20px 40px #00000070;
+        border: 1px solid #3b3b3b;
+        margin-top: 10px;
+        z-index: 999;
+        border-radius: 20px;
+        padding: 30px 0;
+
+    }
+
+
+    .btn {
+        padding: 4px 12px;
+        font-size: 12px;
+    }
+
+
+    .blur-gradient {
+        height: 380px;
+    }
+
+    .hero-content {
+        height: 380px;
+    }
+
+    .hero-content .hero-blur-image {
+        height: 380px;
+    }
+
+    .hero-content .hero-blur-image img {
+        height: 380px;
+        object-fit: cover;
+    }
+
+    .about-desc-content .description {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .mantra .mantra-content .mantra-description .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .who-we-are .who-we-are-content .subtitle {
+        font-size: 26px;
+    }
+
+    .network .network-content .card .title {
+        font-size: 26px;
+    }
+
+    .newsletter .newsletter-contents .row .col-md-5 span {
+        font-size: 18px;
+    }
+
+    .newsletter-input {
+        padding: 11px 16px;
+    }
+
+    .contact .contact-form .card .content {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+
+    .documents .documents-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .desc {
+        padding: 10px;
+    }
+
+    .business .business-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .docs {
+        padding: 0;
+    }
+
+    .business .business-content .docs {
+        padding: 0px;
+    }
+
+    .partners .partners-content .partners-tabs .btn-tab {
+        width: 300px;
+    }
+
+    .btn-newsletter {
+        padding: 11px 8px;
+    }
+
+    .about-content {
+        padding: 80px 20px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-newsletter svg {
+        height: 35px;
+        width: 35px
+    }
+
+    .services .services-content .section-title {
+        font-size: 26px;
+    }
+
+    .ai .ai-content .title,
+    .platforms .platforms-content .title,
+    .value-added .value-added-content .title,
+    .consultancy .consultancy-content .title {
+        font-size: 30px;
+    }
+
+    .ai .ai-content .description,
+    .platforms .platforms-content .description,
+    .value-added .value-added-content .description,
+    .consultancy .consultancy-content .description {
+        padding: 0;
+    }
+
+    .value-added-features .features-list .card .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-added-features .features-list .card .content img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .consultancy-desc .services ul li img {
+        height: auto;
+    }
+
+    .team .team-content .subtitle {
+        font-size: 20px;
+    }
+
+
+
+    .impact .impact-content .content {
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .impact .impact-content .soc {
+        display: flex;
+          align-items: center;
+          gap: 20px;
+    }
+
+    .impact .impact-content .buttons {
+        margin-top: 20px;
+    }
+
+    .impact .impact-content .buttons .btn-primary {
+        padding: 8px 50px;
+    }
+    .valued .valued-content .valued-tabs .ussd img{
+        height: auto;
+    }
+
+    .team .team-content .team-tabs .btn-tab {
+        width: 300px;
+        padding: 8px 20px;
+    }
+
+    .blog-search input{
+        width: 100%;
+    }
+
+    .blog-search input::placeholder{
+        font-size: 14px;
+    }
+
+
+    .team-list .row .card .details .name {
+        font-size: 17px;
+    }
+
+    .network .network-content .col-md-10 .card img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .network .network-content .col-md-2 .card {
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .title {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-content .description {
+        color: var(--text-light);
+        font-size: 1rem;
+
+    }
+
+    .contact .contact-form form .form-group .card .content {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .contact .contact-form form .form-group p {
+        color: var(--text-light);
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-form form .form-group .card .content .submit-btn {
+        padding: 2px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer-content .disclaimer-image img {
+        height: 300px;
+    }
+
+    .services-slide .services-slide-content {
+        padding: 40px;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .img-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .quote {
+        display: none;
+    }
+
+    .about-desc-content .title {
+        font-size: 26px;
+    }
+
+    .mantra .mantra-content .mantra-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .description {
+        font-size: 18px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content .title {
+        font-size: 19px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content ul .item {
+        font-size: 18px;
+    }
+
+    .testimonials .testimonials-contents .section-title {
+        font-size: 26px;
+    }
+
+    .testimonials .testimonials-contents .section-subtitle {
+        font-size: 20px;
+    }
+
+    .footer .footer-content .card {
+        padding: 35px;
+    }
+
+    .partners .partners-content .subtitle {
+        padding: 10px;
+    }
+
+    .partners-list {
+        padding: 0px;
+    }
+
+    .consultancy-desc .services {
+        padding: 0;
+    }
+
+    .consultancy-desc .services .card {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        width: calc(100% - 40px);
+        gap: 20px;
+    }
+
+    .consultancy-desc .services .card .divider {
+        display: none;
+    }
+
+    .consultancy-desc .services .card img {
+        height: auto;
+        width: 90px;
+    }
+
+    .consultancy-desc .services .card h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    ƒ .about-content {
+        padding: 35px;
+    }
+
+    .about-desc-content {
+        padding: 35px;
+    }
+
+    .hero-overlay-content .row .col-md-6 {
+        margin-top: -10px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        font-size: 17px;
+    }
+
+    /* hero section start*/
+
+    .hero-overlay-content {
+        position: absolute;
+        top: 140px;
+    }
+
+    .hero-overlay-content .row .col-md-6 span {
+        color: var(--text-light);
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        color: var(--text-light);
+        font-size: 26px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .hero-overlay-content .row .col-md-6 .hero-right-img img {
+        display: none;
+    }
+
+    /* hero section end*/
+
+
+    /* about section start*/
+    .about-content .row .col-md-4 .card {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .about-content .row .col-md-4 .card .card-line {
+        width: 100px;
+        height: 3px;
+    }
+
+    .about-content .row .col-md-4 .card .card-title {
+        font-size: 24px;
+    }
+
+    .about-content .row .col-md-4 .card .card-content {
+        font-size: 16px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 4px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .long {
+        height: auto;
+    }
+
+    /* about section end*/
+}
+
+@media screen and (max-width: 500px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    /* navbar section start  */
+    .navbar-brand img {
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0 15px;
+    }
+
+
+
+    .navbar-toggler svg {
+        height: 20px;
+        width: 20px;
+    }
+
+
+
+    /* navbar section end  */
+
+
+    .btn {
+        padding: 2px 10px;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    /* hero section start */
+
+    .blur-gradient {
+        height: 320px;
+    }
+
+    .hero-content {
+        height: 320px;
+    }
+
+    .hero-content .hero-blur-image {
+        height: 320px;
+    }
+
+    .hero-content .hero-blur-image img {
+        height: 320px;
+        object-fit: cover;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        color: var(--text-light);
+        font-size: 17px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .about-desc-content .description {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .mantra .mantra-content .mantra-description {
+        text-align: center;
+    }
+
+    .mantra .mantra-content .mantra-description .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .who-we-are .who-we-are-content .subtitle {
+        font-size: 26px;
+    }
+
+    .network .network-content .card .title {
+        font-size: 26px;
+    }
+
+    .newsletter .newsletter-contents .row .col-md-5 span {
+        font-size: 18px;
+    }
+
+    .newsletter-input {
+        padding: 11px 16px;
+    }
+
+    .contact .contact-form .card .content {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+
+    .documents .documents-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .desc {
+        padding: 10px;
+    }
+
+    .business .business-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .docs {
+        padding: 0;
+    }
+
+    .business .business-content .docs {
+        padding: 0px;
+    }
+
+    .partners .partners-content .partners-tabs .btn-tab {
+        width: 300px;
+    }
+
+    .btn-newsletter {
+        padding: 11px 8px;
+    }
+
+    .about-content {
+        padding: 80px 20px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-newsletter svg {
+        height: 35px;
+        width: 35px
+    }
+
+    .services .services-content .section-title {
+        font-size: 26px;
+    }
+
+    .ai .ai-content .title,
+    .platforms .platforms-content .title,
+    .value-added .value-added-content .title,
+    .consultancy .consultancy-content .title {
+        font-size: 30px;
+    }
+
+    .ai .ai-content .description,
+    .platforms .platforms-content .description,
+    .value-added .value-added-content .description,
+    .consultancy .consultancy-content .description {
+        padding: 0;
+    }
+
+    .value-added-features .features-list .card .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-added-features .features-list .card .content img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .consultancy-desc .services ul li img {
+        height: auto;
+    }
+
+    .team .team-content .subtitle {
+        font-size: 20px;
+    }
+
+
+
+    .impact .impact-content .content {
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .impact .impact-content .soc {
+        display: flex;
+          align-items: center;
+          gap: 20px;
+    }
+
+    .impact .impact-content .buttons {
+        margin-top: 20px;
+    }
+
+    .impact .impact-content .buttons .btn-primary {
+        padding: 8px 50px;
+    }
+    .valued .valued-content .valued-tabs .ussd img{
+        height: auto;
+    }
+
+    .team .team-content .team-tabs .btn-tab {
+        width: 300px;
+        padding: 8px 20px;
+    }
+
+    .blog-search input{
+        width: 100%;
+    }
+
+    .blog-search input::placeholder{
+        font-size: 14px;
+    }
+
+
+    .team-list .row .card .details .name {
+        font-size: 17px;
+    }
+
+    .network .network-content .col-md-10 .card img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .network .network-content .col-md-2 .card {
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .title {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-content .description {
+        color: var(--text-light);
+        font-size: 1rem;
+
+    }
+
+    .contact .contact-form form .form-group .card .content {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .contact .contact-form form .form-group p {
+        color: var(--text-light);
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-form form .form-group .card .content .submit-btn {
+        padding: 2px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer-content .disclaimer-image img {
+        height: 300px;
+    }
+
+    .services-slide .services-slide-content {
+        padding: 40px;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .img-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .quote {
+        display: none;
+    }
+
+    .about-desc-content .title {
+        font-size: 26px;
+    }
+
+    .mantra .mantra-content .mantra-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .description {
+        font-size: 18px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content .title {
+        font-size: 19px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content ul .item {
+        font-size: 18px;
+    }
+
+    .testimonials .testimonials-contents .section-title {
+        font-size: 26px;
+    }
+
+    .testimonials .testimonials-contents .section-subtitle {
+        font-size: 20px;
+    }
+
+    .footer .footer-content .card {
+        padding: 35px;
+    }
+
+    .partners .partners-content .subtitle {
+        padding: 10px;
+    }
+
+    .partners-list {
+        padding: 0px;
+    }
+
+    .consultancy-desc .services {
+        padding: 0;
+    }
+
+    .consultancy-desc .services .card {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        width: calc(100% - 40px);
+        gap: 20px;
+    }
+
+    .consultancy-desc .services .card .divider {
+        display: none;
+    }
+
+    .consultancy-desc .services .card img {
+        height: auto;
+        width: 90px;
+    }
+
+    .consultancy-desc .services .card h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 35px;
+    }
+
+    .about-desc-content {
+        padding: 35px;
+    }
+
+    .hero-overlay-content .row .col-md-6 {
+        margin-top: -10px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        font-size: 17px;
+    }
+
+    .hero-overlay-content {
+        top: 120px;
+    }
+
+
+    .hero-overlay-content .row .col-md-6 span {
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        color: var(--text-light);
+        font-size: 17px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .hero-overlay-content .row .col-md-6 .hero-right-img img {
+        display: none;
+    }
+
+    /* hero section end */
+
+
+    /* about section start*/
+
+    .about-content .row .col-md-4 .card {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .about-content .row .col-md-4 .card .card-line {
+        width: 100px;
+        height: 3px;
+    }
+
+    .about-content .row .col-md-4 .card .card-title {
+        font-size: 18px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .long {
+        height: auto;
+    }
+
+    /* about section end*/
+}
+
+@media screen and (max-width: 400px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    /* navbar section start  */
+    .navbar-brand img {
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0 16px;
+    }
+
+
+
+
+
+    .navbar-toggler svg {
+        height: 22px;
+        width: 22px;
+    }
+
+    /* navbar section end  */
+
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    /* hero section start */
+
+    .blur-gradient {
+        height: 360px;
+    }
+
+    .hero-content {
+        height: 360px;
+    }
+
+    .hero-content .hero-blur-image {
+        height: 360px;
+    }
+
+    .hero-content .hero-blur-image img {
+        height: 360px;
+        object-fit: cover;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        color: var(--text-light);
+        font-size: 17px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .hero-overlay-content .row .col-md-6 p {
+        color: var(--text-light);
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .about-desc-content .description {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .mantra .mantra-content .mantra-description {
+        text-align: center;
+    }
+
+    .mantra .mantra-content .mantra-description .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .who-we-are .who-we-are-content .subtitle {
+        font-size: 26px;
+    }
+
+    .network .network-content .card .title {
+        font-size: 26px;
+    }
+
+    .newsletter .newsletter-contents .row .col-md-5 span {
+        font-size: 18px;
+    }
+
+    .newsletter-input {
+        padding: 11px 16px;
+    }
+
+    .contact .contact-form .card .content {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+
+    .documents .documents-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .desc {
+        padding: 10px;
+    }
+
+    .business .business-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .docs {
+        padding: 0;
+    }
+
+    .business .business-content .docs {
+        padding: 0px;
+    }
+
+    .partners .partners-content .partners-tabs .btn-tab {
+        width: 300px;
+    }
+
+    .btn-newsletter {
+        padding: 11px 8px;
+    }
+
+    .about-content {
+        padding: 80px 20px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-newsletter svg {
+        height: 35px;
+        width: 35px
+    }
+
+    .services .services-content .section-title {
+        font-size: 26px;
+    }
+
+    .ai .ai-content .title,
+    .platforms .platforms-content .title,
+    .value-added .value-added-content .title,
+    .consultancy .consultancy-content .title {
+        font-size: 30px;
+    }
+
+    .ai .ai-content .description,
+    .platforms .platforms-content .description,
+    .value-added .value-added-content .description,
+    .consultancy .consultancy-content .description {
+        padding: 0;
+    }
+
+    .value-added-features .features-list .card .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-added-features .features-list .card .content img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .consultancy-desc .services ul li img {
+        height: auto;
+    }
+
+    .team .team-content .subtitle {
+        font-size: 20px;
+    }
+
+
+
+    .impact .impact-content .content {
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .impact .impact-content .soc {
+        display: flex;
+          align-items: center;
+          gap: 20px;
+    }
+
+    .impact .impact-content .buttons {
+        margin-top: 20px;
+    }
+
+    .impact .impact-content .buttons .btn-primary {
+        padding: 8px 50px;
+    }
+    .valued .valued-content .valued-tabs .ussd img{
+        height: auto !important;
+    }
+
+    .team .team-content .team-tabs .btn-tab {
+        width: 300px;
+        padding: 8px 20px;
+    }
+
+    .blog-search input{
+        width: 100%;
+    }
+
+    .blog-search input::placeholder{
+        font-size: 14px;
+    }
+
+
+    .team-list .row .card .details .name {
+        font-size: 17px;
+    }
+
+    .network .network-content .col-md-10 .card img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .network .network-content .col-md-2 .card {
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .title {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-content .description {
+        color: var(--text-light);
+        font-size: 1rem;
+
+    }
+
+    .contact .contact-form form .form-group .card .content {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .contact .contact-form form .form-group p {
+        color: var(--text-light);
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-form form .form-group .card .content .submit-btn {
+        padding: 2px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .disclaimer-content .disclaimer-image img {
+        height: 300px;
+    }
+
+    .services-slide .services-slide-content {
+        padding: 40px;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .img-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .quote {
+        display: none;
+    }
+
+    .about-desc-content .title {
+        font-size: 26px;
+    }
+
+    .mantra .mantra-content .mantra-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .description {
+        font-size: 18px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content .title {
+        font-size: 19px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content ul .item {
+        font-size: 18px;
+    }
+
+    .testimonials .testimonials-contents .section-title {
+        font-size: 26px;
+    }
+
+    .testimonials .testimonials-contents .section-subtitle {
+        font-size: 20px;
+    }
+
+    .footer .footer-content .card {
+        padding: 35px;
+    }
+
+    .partners .partners-content .subtitle {
+        padding: 10px;
+    }
+
+    .partners-list {
+        padding: 0px;
+    }
+
+    .consultancy-desc .services {
+        padding: 0;
+    }
+
+    .consultancy-desc .services .card {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        width: calc(100% - 40px);
+        gap: 20px;
+    }
+
+    .consultancy-desc .services .card .divider {
+        display: none;
+    }
+
+    .consultancy-desc .services .card img {
+        height: auto;
+        width: 90px;
+    }
+
+    .consultancy-desc .services .card h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    ƒ .about-content {
+        padding: 35px;
+    }
+
+    .about-desc-content {
+        padding: 35px;
+    }
+
+    .hero-overlay-content .row .col-md-6 {
+        margin-top: -10px;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .hero-overlay-content {
+        top: 120px;
+    }
+
+    .hero-overlay-content .row .col-md-6 span {
+        font-size: 12px;
+    }
+
+
+    .hero-overlay-content .row .col-md-6 .hero-right-img img {
+        display: none;
+    }
+
+    /* hero section end */
+
+
+    /* about section start*/
+
+    /* about section end*/
+    .long {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    /* navbar section start  */
+    .navbar-brand img {
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0 15px;
+    }
+
+
+
+
+
+    .navbar-toggler svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    /* navbar section end  */
+
+
+    .btn {
+        padding: 2px 10px;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    /* hero section start */
+
+    .blur-gradient {
+        height: 360px;
+    }
+
+    .hero-content {
+        height: 360px;
+    }
+
+    .hero-content .hero-blur-image {
+        height: 360px;
+    }
+
+    .hero-content .hero-blur-image img {
+        height: 360px;
+        object-fit: cover;
+    }
+
+    .about-desc-content .description {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .mantra .mantra-content .mantra-description {
+        text-align: center;
+    }
+
+    .mantra .mantra-content .mantra-description .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .who-we-are .who-we-are-content .subtitle {
+        font-size: 26px;
+    }
+
+    .network .network-content .card .title {
+        font-size: 26px;
+    }
+
+    .newsletter .newsletter-contents .row .col-md-5 span {
+        font-size: 18px;
+    }
+
+    .newsletter-input {
+        padding: 11px 16px;
+    }
+
+    .contact .contact-form .card .content {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+
+    .documents .documents-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .desc {
+        padding: 10px;
+    }
+
+    .business .business-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .docs {
+        padding: 0;
+    }
+
+    .business .business-content .docs {
+        padding: 0px;
+    }
+
+    .partners .partners-content .partners-tabs .btn-tab {
+        width: 300px;
+    }
+
+    .btn-newsletter {
+        padding: 11px 8px;
+    }
+
+    .about-content {
+        padding: 80px 20px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-newsletter svg {
+        height: 35px;
+        width: 35px;
+    }
+
+    .ai .ai-content .title,
+    .platforms .platforms-content .title,
+    .value-added .value-added-content .title,
+    .consultancy .consultancy-content .title {
+        font-size: 30px;
+    }
+
+    .ai .ai-content .description,
+    .platforms .platforms-content .description,
+    .value-added .value-added-content .description,
+    .consultancy .consultancy-content .description {
+        padding: 0;
+    }
+
+    .value-added-features .features-list .card .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-added-features .features-list .card .content img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .consultancy-desc .services ul li img {
+        height: auto;
+    }
+
+    .team .team-content .subtitle {
+        font-size: 20px;
+    }
+
+
+
+    .impact .impact-content .content {
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .impact .impact-content .soc {
+        display: flex;
+          align-items: center;
+          gap: 20px;
+    }
+
+    .impact .impact-content .buttons {
+        margin-top: 20px;
+    }
+
+    .impact .impact-content .buttons .btn-primary {
+        padding: 8px 50px;
+    }
+    .valued .valued-content .valued-tabs .ussd img{
+        height: auto;
+    }
+
+    .team .team-content .team-tabs .btn-tab {
+        width: 300px;
+        padding: 8px 20px;
+    }
+
+    .blog-search input{
+        width: 100%;
+    }
+
+    .blog-search input::placeholder{
+        font-size: 14px;
+    }
+
+
+    .team-list .row .card .details .name {
+        font-size: 17px;
+    }
+
+    .network .network-content .col-md-10 .card img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .network .network-content .col-md-2 .card {
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .title {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-content .description {
+        color: var(--text-light);
+        font-size: 1rem;
+
+    }
+
+    .contact .contact-form form .form-group .card .content {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .contact .contact-form form .form-group p {
+        color: var(--text-light);
+        font-size: 1.2rem;
+    }
+
+    .contact .contact-form form .form-group .card .content .submit-btn {
+        padding: 2px 10px;
+        width: 100%;
+    }
+
+
+    .disclaimer-content .disclaimer-image img {
+        height: 300px;
+    }
+
+    .services-slide .services-slide-content {
+        padding: 40px;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .img-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .testimonials-contents .card .card-top .content .quote {
+        display: none;
+    }
+
+    .about-desc-content .title {
+        font-size: 26px;
+    }
+
+    .mantra .mantra-content .mantra-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .title {
+        font-size: 26px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .description {
+        font-size: 18px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content .title {
+        font-size: 19px;
+    }
+
+    .benefit .benefit-content .col-md-6 .benefit-description .list-content ul .item {
+        font-size: 18px;
+    }
+
+    .testimonials .testimonials-contents .section-title {
+        font-size: 26px;
+    }
+
+    .testimonials .testimonials-contents .section-subtitle {
+        font-size: 20px;
+    }
+
+    .footer .footer-content .card {
+        padding: 35px;
+    }
+
+    .partners .partners-content .subtitle {
+        padding: 10px;
+    }
+
+    .partners-list {
+        padding: 0px;
+    }
+
+    .consultancy-desc .services {
+        padding: 0;
+    }
+
+    .consultancy-desc .services .card {
+        padding: 20px;
+        flex-direction: column;
+        height: auto;
+        width: calc(100% - 40px);
+        gap: 20px;
+    }
+
+    .consultancy-desc .services .card .divider {
+        display: none;
+    }
+
+    .consultancy-desc .services .card img {
+        height: auto;
+        width: 90px;
+    }
+
+    .consultancy-desc .services .card h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 35px;
+    }
+
+    .about-desc-content {
+        padding: 35px;
+    }
+
+    .hero-overlay-content .row .col-md-6 {
+        margin-top: -10px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        font-size: 17px;
+    }
+
+    .hero-overlay-content {
+        top: 120px;
+    }
+
+    .hero-overlay-content .row .col-md-6 span {
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .hero-overlay-content .row .col-md-6 h2 {
+        color: var(--text-light);
+        font-size: 17px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .hero-overlay-content .row .col-md-6 .hero-right-img img {
+        display: none;
+    }
+
+    /* hero section end */
+
+    .about-desc-content .description {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .mantra .mantra-content .mantra-description {
+        text-align: center;
+    }
+
+    .mantra .mantra-content .mantra-description .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .newsletter .newsletter-contents .row .col-md-5 span {
+        font-size: 18px;
+    }
+
+    .newsletter-input {
+        padding: 11px 16px;
+    }
+
+    .contact .contact-form .card .content {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+
+    .documents .documents-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .desc {
+        padding: 10px;
+    }
+
+    .business .business-content .desc {
+        padding: 10px;
+    }
+
+    .developer .developer-content .docs {
+        padding: 0;
+    }
+
+    .business .business-content .docs {
+        padding: 0px;
+    }
+
+    .partners .partners-content .partners-tabs .btn-tab {
+        width: 300px;
+    }
+
+    .btn-newsletter {
+        padding: 11px 8px;
+    }
+
+    .about-content {
+        padding: 80px 20px;
+    }
+
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-newsletter svg {
+        height: 35px;
+        width: 35px
+    }
+
+    .services .services-content .section-title {
+        font-size: 26px;
+    }
+
+    .who-we-are .who-we-are-content .subtitle {
+        font-size: 26px;
+    }
+
+    .network .network-content .card .title {
+        font-size: 26px;
+    }
+
+    .ai .ai-content .title,
+    .platforms .platforms-content .title,
+    .value-added .value-added-content .title,
+    .consultancy .consultancy-content .title {
+        font-size: 30px;
+    }
+
+    .ai .ai-content .description,
+    .platforms .platforms-content .description,
+    .value-added .value-added-content .description,
+    .consultancy .consultancy-content .description,
+    .value-added .value-added-content .description {
+        padding: 0;
+    }
+
+    .value-added-features .features-list .card .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-added-features .features-list .card .content img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .consultancy-desc .services ul li img {
+        height: auto;
+    }
+
+    .team .team-content .subtitle {
+        font-size: 20px;
+    }
+
+
+
+    .impact .impact-content .content {
+        max-width: 100%;
+        padding: 0px;
+        background: none;
+    }
+    .impact .impact-content .soc {
+        display: flex;
+          align-items: center;
+          gap: 20px;
+    }
+
+    .impact .impact-content .buttons {
+        margin-top: 20px;
+    }
+
+    .impact .impact-content .buttons .btn-primary {
+        padding: 8px 50px;
+    }
+    .valued .valued-content .valued-tabs .ussd img{
+        height: auto;
+    }
+
+    .team .team-content .team-tabs .btn-tab {
+        width: 300px;
+        padding: 8px 20px;
+    }
+
+    .blog-search input{
+        width: 100%;
+    }
+
+    .blog-search input::placeholder{
+        font-size: 14px;
+    }
+
+
+    .team-list .row .card .details .name {
+        font-size: 17px;
+    }
+
+    .network .network-content .col-md-10 .card img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .network .network-content .col-md-2 .card {
+        margin-bottom: 30px;
+    }
+
+    .contact .contact-content .title {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+    }
+
+    .contact .contact-content .description {
+        color: var(--text-light);
+        font-size: 1rem;
+    }
+
+
+    .hero-overlay-content .row .col-md-6 {
+        margin-top: -10px;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+    /* about section start*/
+    .btn-read-more-primary {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 24px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .btn-read-more-light {
+        padding: 2px 4px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .long {
+        height: auto;
+    }
+
+    /* about section end*/
+
+}
