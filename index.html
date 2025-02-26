@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Zziem Technologies">
 
-    <meta name="twitter:card" content="https://zziem.com/assets/images/Zziem_Logo.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Zziem Technologies | AI & Big Data Solutions">
     <meta name="twitter:description" content="Advancing AI research and development and providing groundbreaking solutions across businesses with expertise in AI, Big Data, IT consultancy, and software development.">
     <meta name="twitter:image" content="https://zziem.com/assets/images/Zziem_Logo.jpeg">
@@ -23,7 +23,6 @@
 
     <meta name="author" content="Zziem Technologies Ltd">
     <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-language" content="en-gh">
 
     <link rel="canonical" href="index.html">
@@ -32,28 +31,23 @@
     <link rel="icon" type="image/png" sizes="96x96" href="assets/images/Zziem_Logo.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap-5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/glightbox/dist/css/glightbox.min.css">
-
     <link rel="stylesheet" href="assets/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/owl-carousel/owl.theme.default.min.css">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    
 </head>
 
 <body>
-<!-- Cookie Consent CSS START -->
+<!-- Cookie Consent CSS START 
 <style>
     .modal-content {
         background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
@@ -156,10 +150,10 @@
     .form-switch .form-check-input:focus {
         box-shadow: none;
     }
-</style>
+</style>-->
 
 
-<!-- Cookie Consent BANNER START -->
+<!-- Cookie Consent BANNER START 
 <div id="cookieBanner" class="cookie-banner p-4 pb-1">
     <div class="row">
         <div class="col-md-8">
@@ -186,12 +180,12 @@
         </div>
     </div>
 
-</div>
+</div>-->
 <!-- Cookie Consent BANNER END -->
 
 <!-- Cookie Consent MODAL START -->
 
-<!-- Modal -->
+<!-- Modal 
 <div class="modal fade" id="cookieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="cookieModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
@@ -342,10 +336,10 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Cookie Consent MODAL END -->
 
-<!-- Cookie Consent JS START -->
+<!-- Cookie Consent JS START 
 <script>
     const cookieBanner = document.getElementById('cookieBanner');
     const cookieConsentBtn = document.getElementById('cookieConsentBtn');
@@ -377,14 +371,16 @@
     cookieModalTrigBtn.addEventListener('click', (event) => {
         $('#cookieModal').modal('show');
     });
-</script>
+</script>-->
 <!-- Cookie Consent JS END -->
 
 <!--Page wrapper Section-->
 <div class="page-wrapper">
-    <div id="loader">
+   <!-- <div id="loader">
         <span><img src="assets/images/Zziem_Logo.jpeg" alt="Loading Logo"></span>
-    </div>
+    </div>-->
+
+    <!-- Menu bar-->
     <section class="page-header">
         <div class="container-fluid">
             <nav class="navbar sticky-top navbar-expand-lg content-width">
@@ -441,6 +437,9 @@
                                 <a class="nav-link" href="jobs.html">Jobs & Careers</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contuct Us</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="btn-light-nav d-flex align-items-center" href="contact.html">
                                     Let's interact
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -455,7 +454,7 @@
         </div>
     </section>
 </div>
-<!-- End of Page wrapper -->
+<!-- End (MenuBar)of Page wrapper -->
 
 <style>
     body {
@@ -464,11 +463,19 @@
     }
 
     .navbar {
-        background-color: #add8e6; /* Light blue background */
+         /*background-color: #485bed; /* Light blue background */
+        background-color: transparent !important;
+        position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+
+
     }
 
     .navbar-nav .nav-link {
-        color: #000; /* Black text color for visibility */
+        color: #ffffff; /* Black text color for visibility */
+        font-weight: bold; /* Makes text bold */
     }
 
     .navbar-nav .nav-link:hover {
@@ -500,7 +507,7 @@
                         <h1 data-aos="fade-up">Revolutionize Your Business with Zziem Technology</h1>
                         <p data-aos="fade-up" data-aos-delay="200">Discover new levels of efficiency and growth with our robust solutions.</p>
                         <div class="link-buttons" data-aos="fade-up" data-aos-delay="400">
-                            <a class="btn btn-primary" target="__blank" ">Get Started</a>
+                            <a class="btn btn-primary1" target="__blank">Get Started</a>
                             <a class="btn btn-secondary" href="contact.html">Learn More</a>
                         </div>
                     </div>
@@ -516,7 +523,7 @@
             }
         
             .hero-background {
-                background: url('assets/all images/hero-2.jpg') no-repeat center center/cover; /* New background image */
+                background: url('assets/all images/consultancy.jpg') no-repeat center center/cover; /* New background image */
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -527,6 +534,7 @@
                 position: relative;
                 z-index: 2; /* Ensure content is above the background */
                 color: #ffffff;
+                font-weight: bold; /* Makes text bold */
                 text-align: center;
                 padding: 20% 15px; /* Center content vertically */
             }
@@ -535,7 +543,9 @@
                 font-size: 3rem; /* Large title */
                 margin-bottom: 20px; /* Space below title */
                 font-weight: bold;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+               /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
             }
         
             p {
@@ -561,8 +571,9 @@
                 transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
             }
         
-            .btn-primary {
-                background-color: #007bff; /* Primary button color */
+            .btn-primary1 {
+                background-color: transparent; /* Primary button color */
+                border: 2px solid #ffffff; /* White border */
                 color: #ffffff; /* Text color */
             }
         
