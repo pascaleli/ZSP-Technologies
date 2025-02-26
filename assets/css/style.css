@@ -12,7 +12,7 @@
     --bg-dark: #000;
     --bg-light: #fff;
     --secondary-color: #fecc02;
-    --primary-color: #00a700;
+    --primary-color: #090590;
     --text-light: #fff;
     --text-dark: #000;
     --big-font: 4rem;
@@ -1962,7 +1962,7 @@ a {
     right: 20px;
     padding: 15px;
     border-radius: 20px;
-    background: linear-gradient(130.08deg, #32352d 0%, #191919 100%);
+    background: linear-gradient(130.08deg, #10100f 0%, #191919 100%);
     box-shadow: 0px 20px 40px #00000070;
     border: 1px solid #3b3b3b;
     color: #fff;
@@ -1970,7 +1970,7 @@ a {
 }
 
 .business .business-content .docs .card a:hover>i {
-    background: linear-gradient(130.08deg, #45542d 0%, #191919 100%);
+    background: linear-gradient(130.08deg, #0f0f0e 0%, #191919 100%);
     border: 1px solid #fff;
 }
 
