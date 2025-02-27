@@ -50,520 +50,196 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
-        <style>
-        .modal-content {
-            background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
-            box-shadow: 0px 20px 40px #00000070;
-            border: 1px solid #3b3b3b;
-            color: #fff;
-        }
 
-        .modal-header {
-            color: #fecc02;
-        }
-    </style>
-</head>
-
-<body>
-<!-- Cookie Consent CSS START -->
-<style>
-    .modal-content {
-        background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
-        box-shadow: 0px 20px 40px #00000070;
-        border: 1px solid #3b3b3b;
-        color: #fff;
-    }
-
-    .modal-header {
-        color: #00a700;
-    }
-
-    .cookie-banner {
-        background: linear-gradient(to bottom, #1d4b1d, #010a01);
-        ;
-        color: #fff;
-        z-index: 1000;
-        position: fixed;
-        /* bottom: 0; */
-        bottom: -100%;
-        left: 0;
-        right: 0;
-        z-index: 999;
-        transition: 1000ms;
-    }
-
-    .cookie-banner button:hover,
-    .cookie-banner button:focus {
-        color: #2c5f2d !important;
-        border-color: #fff !important;
-        background-color: #fff !important;
-    }
-
-    .cookie-banner button {
-        border-color: #fff !important;
-    }
-
-    .cookie-banner button,
-    .cookie-banner a {
-        color: #fff !important;
-    }
-
-    #cookieModalTrigBtn {
-        padding: 15px;
-    }
-
-    #cookieModalTrigBtn:hover {
-        background: transparent !important;
-    }
-
-    .accordion-item {
-        border: none;
-    }
-
-    .accordion-button:focus {
-        box-shadow: none;
-    }
-
-    .accordion-body {
-        background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
-        color: #fff;
-    }
-
-    .accordion-header {
-        background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
-        color: #00a700;
-    }
-
-    .accordion-button::after {
-        display: none;
-    }
-
-    .accordion-button {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background-color: #282d21;
-        color: #00a700;
-        box-shadow: none;
-    }
-
-    .accordion-button.collapsed {
-        background-color: #282d21;
-        color: #fff;
-        box-shadow: none;
-    }
-
-    .form-check-input {
-        padding: 15px 30px;
-    }
-
-    .form-check-input:checked {
-        background-color: #00a700;
-        border-color: #010a01;
-    }
-
-    .form-switch .form-check-input:focus {
-        box-shadow: none;
-    }
-</style>
-
-
-<!-- Cookie Consent BANNER START -->
-<div id="cookieBanner" class="cookie-banner p-4 pb-1">
-    <div class="row">
-        <div class="col-md-8">
-            <p class="fw-light">
-                Cookies are used to enhance your browsing experience, provide personalized ads or content, and analyze traffic. By clicking. <strong>ACCEPT</strong>, you consent to our use of cookies.
-            </p>
-        </div>
-        <div class="col-md-4 ">
-            <div class="d-flex flex-column">
-                <div
-                    class="d-inline-flex flex-wrap justify-content-between  justify-content-md-around align-items-center mt-2">
-                    <button id="cookieConsentBtn" class="btn btn-outline-light text-white">Accept all</button>
-                    <button id="cookieRejectBtn" class="btn btn-outline-light text-white">Reject Optional</button>
-
-                </div>
-                <div class="mt-3 d-flex justify-content-end">
-                    <button id="cookieModalTrigBtn" type="button" class="text-white fw-bold btn border-0"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M20.5 4c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 6c1.86.5 4 .83 6 1v12h2v-6h2v6h2V7c2-.17 4.14-.5 6-1zM12 4c1.1 0 2-.9 2-2s-.9-2-2-2s-2 .9-2 2s.9 2 2 2M7 24h2v-2H7zm4 0h2v-2h-2zm4 0h2v-2h-2z" />
-                        </svg> Manage Cookies</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-<!-- Cookie Consent BANNER END -->
-
-<!-- Cookie Consent MODAL START -->
-
-<!-- Modal -->
-<div class="modal fade" id="cookieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="cookieModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <h5 class="modal-title text-center" id="cookieModalLabel">Manage cookies</h5>
-                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <small class="d-block mb-3 text-light">
-                    This site uses cookies to enhance and analyze your experience and for marketing purposes. 
-                    To respect your privacy, you can choose to disable some cookies. Click on the various category 
-                    headings to learn more and modify your settings. Note that blocking certain cookies may affect 
-                    your site experience and limit the services we can offer.
-                </small>
-
-                <div class="tf__faq_accordion">
-                    <div class="accordion" id="cookieAccordion">
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header" id="heading-One">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-One" aria-expanded="true" aria-controls="collapse-One">
-                                    Necessary
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                            <div id="collapse-One" class="accordion-collapse collapse show"
-                                aria-labelledby="heading-One" data-bs-parent="#cookieAccordion">
-                                <div class="accordion-body">
-                                    <div class="d-flex justify-content-stretch">
-                                        <p>
-                                            These cookies are vital for the website's operation and cannot be disabled. 
-                                            They are typically set in response to your actions, such as configuring your 
-                                            privacy settings, logging in, or submitting forms.
-                                        </p>
-                                        <div class="w-25">
-                                            <div class="float-end ms-3">
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
-                                                        id="necessary-checkbox" checked>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header" id="heading-Two">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-Two" aria-expanded="true" aria-controls="collapse-Two">
-                                    Analytics
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                            <div id="collapse-Two" class="accordion-collapse collapse" aria-labelledby="heading-Two"
-                                data-bs-parent="#cookieAccordion">
-                                <div class="accordion-body">
-                                    <div class="d-flex justify-content-stretch">
-                                        <p>
-                                            These cookies assist us in understanding how visitors use the website. 
-                                            We might use them to gather information and generate site usage statistics. 
-                                            The collected data can also be used, along with some advertising cookies, to 
-                                            deliver more relevant ads across the web and evaluate interactions with those ads.
-                                        </p>
-                                        <div class="w-25">
-                                            <div class="float-end ms-3">
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
-                                                        id="analytics-checkbox" checked>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header" id="heading-Three">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-Three" aria-expanded="true"
-                                    aria-controls="collapse-Three">
-                                    Advertisment
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                            <div id="collapse-Three" class="accordion-collapse collapse"
-                                aria-labelledby="heading-Three" data-bs-parent="#cookieAccordion">
-                                <div class="accordion-body">
-                                    <div class="d-flex justify-content-stretch">
-                                        <p>
-                                            We use cookies to make our ads more relevant and useful for visitors. 
-                                            They help us select ads based on user interests, improve ad campaign 
-                                            performance reporting, and prevent the repetition of ads the user has already viewed.
-                                        </p>
-                                        <div class="w-25">
-                                            <div class="float-end ms-3">
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
-                                                        id="advert-checkbox" checked>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item ">
-                            <h2 class="accordion-header" id="heading-Four">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-Four" aria-expanded="true"
-                                    aria-controls="collapse-Four">
-                                    Functionality
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                </button>
-                            </h2>
-                            <div id="collapse-Four" class="accordion-collapse collapse"
-                                aria-labelledby="heading-Four" data-bs-parent="#cookieAccordion">
-                                <div class="accordion-body">
-                                    <div class="d-flex justify-content-stretch">
-                                        <p>
-                                            We use optional cookies that are not required for the website to operate. 
-                                            These cookies are typically set to personalize and optimize your experience 
-                                            based on the information you provide, and to remember your chat history.
-                                        </p>
-                                        <div class="w-25">
-                                            <div class="float-end ms-3">
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch"
-                                                        id="function-checkbox" checked>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            <div class="modal-footer border-0">
-                <button id="saveCookieSettingBtn" type="button" class="btn btn-outline-light"
-                    data-bs-dismiss="modal">Save
-                    settings</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Cookie Consent MODAL END -->
-
-<!-- Cookie Consent JS START -->
-<script>
-    const cookieBanner = document.getElementById('cookieBanner');
-    const cookieConsentBtn = document.getElementById('cookieConsentBtn');
-    const cookieRejectBtn = document.getElementById('cookieRejectBtn');
-    const saveCookieSettingBtn = document.getElementById('saveCookieSettingBtn');
-    const cookieModalTrigBtn = document.getElementById('cookieModalTrigBtn');
-
-    const cookieAgreed = Boolean(localStorage.getItem('cookie_consent'));
-    // const cookieReject = Boolean(localStorage.getItem('cookie_reject'));
-
-    const hideCookieBanner = (e) => cookieBanner.style.bottom = '-100%';
-    const agreeToCookies = (e) => {
-        localStorage.setItem('cookie_consent', true);
-        hideCookieBanner();
-    };
-
-    setTimeout(() => {
-        // Only show cookie consent banner
-        // if user has not agreed.
-        if (cookieAgreed !== true) {
-            cookieBanner.style.bottom = '0';
-        }
-    }, 5000);
-
-    cookieConsentBtn.addEventListener('click', agreeToCookies);
-    cookieRejectBtn.addEventListener('click', agreeToCookies);
-    saveCookieSettingBtn.addEventListener('click', agreeToCookies);
-
-    cookieModalTrigBtn.addEventListener('click', (event) => {
-        $('#cookieModal').modal('show');
-    });
-</script>
-<!-- Cookie Consent JS END -->
-
-<!--page wrapper section begins-->
+<!--Page wrapper Section-->
 <div class="page-wrapper">
-    <div id="loader">
-        <span><img src="../assets/images/Zziem_Logo.jpeg" alt="Company Logo"></span>
-    </div>
-    <section class="page-header">
-        <div class="container-fluid">
-            <nav class="navbar sticky-top navbar-expand-lg content-width">
-                <div class="container-fluid">
-                    <a class="navbar-brand" data-aos="fade-in" href="../index.html">
-                        <img class="img-fluid" src="../assets/images/Zziem_Logo.jpeg" alt="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="menu-icon fa fa-bars" aria-hidden="true"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center" data-aos="fade-in">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Company</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="about.html">About us</a></li>
-                                    <li><a class="dropdown-item" href="team.html">Leadership</a></li>
-                                    <li><a class="dropdown-item" href="impact.html">Impact</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="../services/ai-and-big-data.html">AI & Big Data</a></li>
-                                    <li><a class="dropdown-item" href="../services/platforms-and-app-development.html">Platforms & App Development</a></li>
-                                    <li><a class="dropdown-item" href="../services/value-added-services.html">Value Added Services</a></li>
-                                    <li><a class="dropdown-item" href="../services/it-consultancy.html">IT Consultancy & Managed Services</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="../resources/documentations.html">Documentation</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../partners.html">Partners</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../jobs.html">Jobs & Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn-light-nav d-flex align-items-center" href="../contact.html">
-                                    Let's talk
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
-<!--page wrapper section ends-->
+    <!-- <div id="loader">
+         <span><img src="assets/images/Zziem_Logo.jpeg" alt="Loading Logo"></span>
+     </div>-->
+ 
+     <!-- Menu bar-->
+     <section class="page-header">
+         <div class="container-fluid">
+             <nav class="navbar sticky-top navbar-expand-lg content-width">
+                 <div class="container-fluid">
+                     <a class="navbar-brand" data-aos="fade-in" href="../index.html">
+                         <img class="img-fluid" src="../assets/images/Zziem_Logo.jpeg" alt="Zziem Logo">
+                     </a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                         aria-expanded="false" aria-label="Toggle navigation">
+                         <i class="menu-icon fa fa-bars" aria-hidden="true"></i>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center" data-aos="fade-in">
+                             <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                             </li>
+                             <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Company
+                                 </a>
+                                 <ul class="dropdown-menu dropdown-menu-dark">
+                                     <li><a class="dropdown-item" href="../company/about.html">About Us</a></li>
+                                     <li><a class="dropdown-item" href="../company/team.html">Leadership</a></li>
+                                     <li><a class="dropdown-item" href="../company/impact.html">Impact</a></li>
+                                 </ul>
+                             </li>
+                             <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Services
+                                 </a>
+                                 <ul class="dropdown-menu dropdown-menu-dark">
+                                     <li><a class="dropdown-item" href="../services/ai-and-big-data.html">AI & Big Data</a></li>
+                                     <li><a class="dropdown-item" href="../services/platforms-and-app-development.html">Platforms & App Development</a></li>
+                                     <li><a class="dropdown-item" href="../services/value-added-services.html">Value-Added Services</a></li>
+                                     <li><a class="dropdown-item" href="../services/it-consultancy.html">IT Consultancy & Managed Services</a></li>
+                                 </ul>
+                             </li>
+                             <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Resources
+                                 </a>
+                                 <ul class="dropdown-menu dropdown-menu-dark">
+                                     <li><a class="dropdown-item" href="../resources/documentations.html">Documentation</a></li>
+                                 </ul>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="../partners.html">Partners</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="../blog.html">Blog</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="../jobs.html">Jobs & Careers</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="../contact.html">Contuct Us</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="btn-light-nav d-flex align-items-center" href="../contact.html">
+                                     Let's interact
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5l7 7l-7 7" />
+                                     </svg>
+                                 </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </nav>
+         </div>
+     </section>
+ </div>
+ <!-- End (MenuBar)of Page wrapper -->
+ 
+ <style>
+     body {
+         margin: 0;
+         font-family: Arial, sans-serif;
+     }
+ 
+     .navbar {
+          /*background-color: #485bed; /* Light blue background */
+         background-color: transparent !important;
+         position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 1000; /* Ensures it stays above other elements */
+ 
+ 
+     }
+ 
+     .navbar-nav .nav-link {
+         color: #ffffff; /* Black text color for visibility */
+         font-weight: bold; /* Makes text bold */
+     }
+ 
+     .navbar-nav .nav-link:hover {
+         color: #0056b3; /* Darker blue on hover */
+     }
+ 
+     .navbar-brand img {
+         max-height: 90px; /* Limit logo height */
+     }
+ 
+     .btn-light-nav {
+         background-color: #ffffff; /* White background for button */
+         border: none;
+         color: #007bff; /* Blue text color */
+         border-radius: 20px; /* Rounded button */
+     }
+ 
+     .btn-light-nav:hover {
+         background-color: #e7f1ff; /* Light blue on hover */
+     }
+ </style>
 
-
-<!--page wrapper css-->
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-
-    .navbar {
-        background-color: #add8e6; /* Light blue background */
-    }
-
-    .navbar-nav .nav-link {
-        color: #000; /* Black text color for visibility */
-    }
-
-    .navbar-nav .nav-link:hover {
-        color: #0056b3; /* Darker blue on hover */
-    }
-
-    .navbar-brand img {
-        max-height: 90px; /* Limit logo height */
-    }
-
-    .btn-light-nav {
-        background-color: #ffffff; /* White background for button */
-        border: none;
-        color: #007bff; /* Blue text color */
-        border-radius: 20px; /* Rounded button */
-    }
-
-    .btn-light-nav:hover {
-        background-color: #e7f1ff; /* Light blue on hover */
-    }
-</style>
         <!--impact start-->
-    <section class="impact mb-5">
-        <div class="container-fluid">
-            <div class="impact-content content-width">
-                <div class="video-wrapper">
-                    <video class="w-100 rounded-5" muted autoplay src="../assets/video/video.mp4"></video>
-                </div>
-                <div class="row b-content d-flex justify-content-between align-items-end text-start">
-                    <div class="col-md-8 mb-4">
-                        <h2 class="title text-start">Our Impact</h2>
-                        <div class="content">
-                            
-                            
+        <section class="impact mb-5">
+            <div class="container-fluid px-0">
+                <div class="impact-content">
+                    <div class="cover mb-5" data-aos="fade-in"
+                       style="height: 400px; width: 100vw; 
+                        background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 0;">
+                    </div>
+        
+                    <div class="container">
+                        <div class="row b-content d-flex justify-content-between align-items-end text-start">
+                            <div class="col-md-8 mb-4">
+                                <h2 class="title text-start" style="color: #b80404; font-size: 2.5rem;">Our Impact</h2>
+                                <div class="content">
+                                    <!-- Your content here -->
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="soc float-end">
+                                    <h4>Share:</h4>
+                                    <ul class="socials p-0 d-flex">
+                                        <li class="nav-link mx-2">
+                                            <a href="https://www.facebook.com/ZSPTechnologies?mibextid=LQQJ4d" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                                                    <path fill="#000" d="M232 128a104.16 104.16 0 0 1-91.55 103.26a4 4 0 0 1-4.45-4V152h24a8 8 0 0 0 8-8.53a8.17 8.17 0 0 0-8.25-7.47H136v-24a16 16 0 0 1 16-16h16a8 8 0 0 0 8-8.53a8.17 8.17 0 0 0-8.27-7.47H152a32 32 0 0 0-32 32v24H96a8 8 0 0 0-8 8.53a8.17 8.17 0 0 0 8.27 7.47H120v75.28a4 4 0 0 1-4.44 4a104.15 104.15 0 0 1-91.49-107.19c2-54 45.74-97.9 99.78-100A104.12 104.12 0 0 1 232 128"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-link mx-2">
+                                            <a href="https://x.com/zsp?s=21" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                                    <path fill="#000" d="M8 2H1l8.26 11.015L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886zm9 18L5 4h2l12 16z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-link mx-2">
+                                            <a href="https://www.linkedin.com/company/zsp-technology/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                                                    <path fill="#000" d="M216 24H40a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V40a16 16 0 0 0-16-16M96 176a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0Zm-8-80a12 12 0 1 1 12-12a12 12 0 0 1-12 12m96 80a8 8 0 0 1-16 0v-36a20 20 0 0 0-40 0v36a8 8 0 0 1-16 0v-64a8 8 0 0 1 15.79-1.78A36 36 0 0 1 184 140Z"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-link mx-2">
+                                            <a href="https://youtube.com/@zsptechnologies3546?si=JwStNtUw0TY6daCd" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
+                                                    <path fill="#000" d="M234.33 69.52a24 24 0 0 0-14.49-16.4C185.56 39.88 131 40 128 40s-57.56-.12-91.84 13.12a24 24 0 0 0-14.49 16.4C19.08 79.5 16 97.74 16 128s3.08 48.5 5.67 58.48a24 24 0 0 0 14.49 16.41C69 215.56 120.4 216 127.34 216h1.32c6.94 0 58.37-.44 91.18-13.11a24 24 0 0 0 14.49-16.41c2.59-10 5.67-28.22 5.67-58.48s-3.08-48.5-5.67-58.48m-72.11 61.81l-48 32A4 4 0 0 1 108 160V96a4 4 0 0 1 6.22-3.33l48 32a4 4 0 0 1 0 6.66"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="soc float-end">
-                            <h4>Share:</h4>
-                            <ul class="socials p-0">
-                                <li class="nav-link"><a href="https://www.facebook.com/ZziemTechnologies?mibextid=LQQJ4d"
-                                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 256 256">
-                                            <path fill="#000"
-                                                d="M232 128a104.16 104.16 0 0 1-91.55 103.26a4 4 0 0 1-4.45-4V152h24a8 8 0 0 0 8-8.53a8.17 8.17 0 0 0-8.25-7.47H136v-24a16 16 0 0 1 16-16h16a8 8 0 0 0 8-8.53a8.17 8.17 0 0 0-8.27-7.47H152a32 32 0 0 0-32 32v24H96a8 8 0 0 0-8 8.53a8.17 8.17 0 0 0 8.27 7.47H120v75.28a4 4 0 0 1-4.44 4a104.15 104.15 0 0 1-91.49-107.19c2-54 45.74-97.9 99.78-100A104.12 104.12 0 0 1 232 128" />
-                                        </svg></a></li>
-                                <li class="nav-link"><a href="https://x.com/zziem?s=21" target="_blank"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24">
-                                            <path fill="#000"
-                                                d="M8 2H1l8.26 11.015L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886zm9 18L5 4h2l12 16z" />
-                                        </svg></a></li>
-                                <li class="nav-link"><a
-                                        href="https://www.linkedin.com/company/zziem-technology/
-                                        "
-                                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 256 256">
-                                            <path fill="#000"
-                                                d="M216 24H40a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V40a16 16 0 0 0-16-16M96 176a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0Zm-8-80a12 12 0 1 1 12-12a12 12 0 0 1-12 12m96 80a8 8 0 0 1-16 0v-36a20 20 0 0 0-40 0v36a8 8 0 0 1-16 0v-64a8 8 0 0 1 15.79-1.78A36 36 0 0 1 184 140Z" />
-                                        </svg></a></li>
-                                <li class="nav-link"><a
-                                        href="https://youtube.com/@zziemtechnologies3546?si=JwStNtUw0TY6daCd"
-                                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                            height="24" viewBox="0 0 256 256">
-                                            <path fill="#000"
-                                                d="M234.33 69.52a24 24 0 0 0-14.49-16.4C185.56 39.88 131 40 128 40s-57.56-.12-91.84 13.12a24 24 0 0 0-14.49 16.4C19.08 79.5 16 97.74 16 128s3.08 48.5 5.67 58.48a24 24 0 0 0 14.49 16.41C69 215.56 120.4 216 127.34 216h1.32c6.94 0 58.37-.44 91.18-13.11a24 24 0 0 0 14.49-16.41c2.59-10 5.67-28.22 5.67-58.48s-3.08-48.5-5.67-58.48m-72.11 61.81l-48 32A4 4 0 0 1 108 160V96a4 4 0 0 1 6.22-3.33l48 32a4 4 0 0 1 0 6.66" />
-                                        </svg></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12 mb-2">
-                        <h2 class="text-start fs-5 text-success font-bold  text-uppercase">Our Success Stories By Industry:
-                        </h2>
-                        <hr class="text-light">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card position-relative" style="height: 260px">
-                            <a class="stretched-link z-10" href="impact.html#"></a>
-                            
-                            
-                            
-                            <div class="image position-absolute top-0 bottom-0 w-100 h-100">
-                                <img class="h-100 w-100 object-fit-cover rounded-1"
-                                    src="../assets/images/compressed/about-4.png" alt="">
-                                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 rounded-1"></div>
+        
+                        <div class="row mt-3">
+                            <div class="col-md-12 mb-2">
+                                <h2 class="text-start fs-5 text-success font-bold text-uppercase">Our Success Stories By Industry:</h2>
+                                <hr class="text-light">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card position-relative" style="height: 260px">
+                                    <a class="stretched-link z-10" href="impact.html#"></a>
+                                    <div class="image position-absolute top-0 bottom-0 w-100 h-100">
+                                        <img class="h-100 w-100 object-fit-cover rounded-1" src="../assets/images/compressed/about-4.png" alt="">
+                                        <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 rounded-1"></div>
                             </div>
                         </div>
                     </div>
@@ -663,92 +339,22 @@
         </div>
     </section>
     <!--impact end-->
-    <section class="newsletter">
-        <div class="container-fluid">
-            <div class="newsletter-contents text-center">
-                <h2 class="newsletter-title">Join Our Newsletter</h2>
-                <p class="newsletter-description">Subscribe now to receive the latest news, insights, and exclusive updates directly to your inbox!</p>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <form action="https://zziem.com/contact/newsletter" method="POST">
-                            <input type="hidden" name="_token" value="x7vi4TnEWJgkkLLAvQed01t0QkdIfKrwNecw41on" autocomplete="off">
-                            <div class="input-container">
-                                <div class="input-group mb-3">
-                                    <input type="email" name="email" class="form-control newsletter-input" placeholder="Enter Your Email Address" aria-label="Recipient's email" aria-describedby="button-addon2">
-                                    <button class="btn-newsletter" type="submit" id="button-addon2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
-                                            <path fill="currentColor" fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0" clip-rule="evenodd" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <style>
-        .newsletter {
-    background-color: #007bff; /* Bright blue background */
-    color: white; /* White text */
-    padding: 40px 20px; /* Top and bottom padding */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        .impact {
+    background: url('../assets/all images/service-bg.jpg') no-repeat center center/cover; /* New background image */
+    padding: 80px 0; /* Adds spacing above and below */
+    position: relative; /* Ensures it doesn’t overlap */
+    z-index: 1; /* Ensures it's behind the navbar */
 }
-
-.newsletter-title {
-    font-size: 24px; /* Larger font size for title */
-    font-weight: 700; /* Bold weight */
-    margin-bottom: 15px; /* Space below the title */
-}
-
-.newsletter-description {
-    font-size: 16px; /* Medium font size for description */
-    margin-bottom: 30px; /* Space below the description */
-}
-
-.input-container {
-    position: relative; /* Position for absolute elements */
-}
-
-.newsletter-input {
-    border: 2px solid #fff; /* White border */
-    border-radius: 25px; /* Rounded input */
-    padding: 10px 20px; /* Padding inside the input */
-    width: 100%; /* Full width */
-    transition: border-color 0.3s; /* Transition for border color */
-}
-
-.newsletter-input:focus {
-    border-color: #ffc107; /* Yellow border on focus */
-    outline: none; /* Remove default outline */
-}
-
-.btn-newsletter {
-    background-color: #ffc107; /* Yellow button background */
-    border: none; /* No border */
-    border-radius: 25px; /* Rounded button */
-    padding: 10px 20px; /* Padding inside the button */
-    color: #333; /* Dark text */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Transition for background color */
-}
-
-.btn-newsletter:hover {
-    background-color: #e0a800; /* Darker yellow on hover */
-}
-
     </style>
-
+    
 <section class="footer">
     <div class="container-fluid">
         <div class="footer-content">
             <div class="row">
                 <div class="col-md-3 mb-4">
                     <div class="footer-section">
-                        <h3 class="title">Pages</h3>
+                        <h3 class="title" style="color: #ffc107;">Pages</h3>
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="company/about.html">About Us</a></li>
@@ -760,7 +366,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="footer-section">
-                        <h3 class="title">Services</h3>
+                        <h3 class="title" style="color: #ffc107;">Services</h3>
                         <ul>
                             <li><a href="services/ai-and-big-data.html">AI and Big Data</a></li>
                             <li><a href="services/platforms-and-app-development.html">Platforms and App Development</a></li>
@@ -771,7 +377,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="footer-section">
-                        <h3 class="title">Info</h3>
+                        <h3 class="title" style="color: #ffc107;">Info</h3>
                         <ul>
                             <li><a href="partners.html">Partners</a></li>
                             <li><a href="blog.html">Blog</a></li>
@@ -781,7 +387,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="footer-section">
-                        <h3 class="title">Follow Us</h3>
+                        <h3 class="title" style="color: #ffc107;">Follow Us</h3>
                         <ul class="socials">
                             <li><a href="https://youtube.com/@zziemtechnologies3546?si=JwStNtUw0TY6daCd" target="_blank">YouTube</a></li>
                             <li><a href="https://x.com/zziem?s=21" target="_blank">Twitter</a></li>
@@ -801,7 +407,7 @@
 
 <style>
    .footer {
-    background-color: #343a40; /* Dark background for the footer */
+    background-color: #060606; /* Dark background for the footer */
     color: #ffffff; /* White text color */
     padding: 40px 0;
 }
@@ -839,7 +445,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #ffc107; /* Change color on hover */
+    color: #6e0202; /* Change color on hover */
 }
 
 .socials {
