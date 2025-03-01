@@ -91,12 +91,7 @@
                                     <li><a class="dropdown-item" href="../services/it-consultancy.html">IT Consultancy & Managed Services</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="../resources/documentations.html">Documentation</a></li>
-                                </ul>
-                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="../partners.html">Partners</a>
                             </li>
@@ -127,78 +122,80 @@
 <!--page wrapper css-->
 <style>
     body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding-top: 100px; /* Adjusted to match the new navbar height */
-}
-
-/* Sticky Navbar */
-.navbar {
-    position: fixed; /* Fix navbar at top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Keep navbar above other elements */
-    background-color: #5eb7f7; /* Light blue background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    height: 90px; /* Increased navbar height */
-    display: flex;
-    align-items: center; /* Vertically center navbar content */
-    transition: all 0.3s ease-in-out;
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-    color: #000; /* Black text color for visibility */
-    font-size: 18px; /* Slightly larger text */
-    font-weight: bold;
-    padding: 15px 20px; /* Increase padding */
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #0056b3; /* Darker blue on hover */
-}
-
-/* Logo */
-.navbar-brand img {
-    max-height: 80px; /* Increase logo height */
-    transition: all 0.3s ease-in-out;
-}
-
-/* Navigation Button */
-.btn-light-nav {
-    background-color: #ffffff; /* White background */
-    border: none;
-    color: #007bff; /* Blue text color */
-    border-radius: 20px; /* Rounded button */
-    padding: 10px 18px;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-light-nav:hover {
-    background-color: #e7f1ff; /* Light blue on hover */
-}
-
-/* Responsive Navbar */
-@media (max-width: 768px) {
-    .navbar {
-        height: 80px; /* Slightly smaller for mobile */
+        margin: 0;
+        font-family: Arial, sans-serif;
     }
 
-    .navbar-brand img {
-        max-height: 65px;
+    .navbar {
+         /*background-color: #485bed; /* Light blue background */
+        background-color: transparent !important;
+        position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+
+
     }
 
     .navbar-nav .nav-link {
-        font-size: 16px;
-        padding: 10px 15px;
+        color: #ffffff; /* Black text color for visibility */
+        font-weight: bold; /* Makes text bold */
     }
-}
 
+    .navbar-nav .nav-link:hover {
+        color: #0056b3; /* Darker blue on hover */
+    }
+
+    .navbar-brand img {
+        max-height: 90px; /* Limit logo height */
+    }
+
+    .btn-light-nav {
+        background-color: #ffffff; /* White background for button */
+        border: none;
+        color: #007bff; /* Blue text color */
+        border-radius: 20px; /* Rounded button */
+    }
+
+    .btn-light-nav:hover {
+        background-color: #e7f1ff; /* Light blue on hover */
+    }
+    .nav-link.active {
+        color: #191d8d !important; /* Highlight color */
+        font-weight: bold;
+    }
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+        let navLinks = document.querySelectorAll(".nav-link");
+        let dropdownItems = document.querySelectorAll(".dropdown-item");
 
+        function activateLink(link) {
+            navLinks.forEach(l => l.classList.remove("active")); // Remove active from all links
+            link.classList.add("active"); // Add active to clicked link
+        }
+
+        // Highlight main nav item if any dropdown item is clicked
+        dropdownItems.forEach(item => {
+            item.addEventListener("click", function () {
+                let parentNav = this.closest(".nav-item").querySelector(".nav-link");
+                activateLink(parentNav);
+                localStorage.setItem("activeNav", parentNav.textContent.trim()); // Save active item
+            });
+        });
+
+        // Restore active menu on page load
+        let savedActiveNav = localStorage.getItem("activeNav");
+        if (savedActiveNav) {
+            navLinks.forEach(link => {
+                if (link.textContent.trim() === savedActiveNav) {
+                    activateLink(link);
+                }
+            });
+        }
+    });
+</script>
         <!--platforms start-->
     <section class="platforms mb-5">
         <div class="container-fluid">
@@ -429,9 +426,7 @@
                     <div class="footer-section">
                         <h3 class="title">Info</h3>
                         <ul>
-                            <li><a href="partners.html">Partners</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="resources/documentations.html">Resources</a></li>
                         </ul>
                     </div>
                 </div>

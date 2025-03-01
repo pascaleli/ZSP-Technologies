@@ -95,14 +95,7 @@
                                     <li><a class="dropdown-item" href="it-consultancy.html">IT Consultancy & Managed Services</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Resources
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="../resources/documentations.html">Documentation</a></li>
-                                </ul>
-                            </li>
+                 
                             <li class="nav-item">
                                 <a class="nav-link" href="../partners.html">Partners</a>
                             </li>
@@ -137,21 +130,20 @@
     }
 
     .navbar {
-        background-color: #add8e6; /* Light blue background */
+         /*background-color: #485bed; /* Light blue background */
+        background-color: transparent !important;
+        position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other elements */
+
+
     }
 
     .navbar-nav .nav-link {
-        color: #000; /* Black text color for visibility */
+        color: #ffffff; /* Black text color for visibility */
+        font-weight: bold; /* Makes text bold */
     }
-
-    /* Navbar Links */
-.navbar-nav .nav-link {
-    color: #000; /* Black text color for visibility */
-    font-size: 18px; /* Slightly larger text */
-    font-weight: bold;
-    padding: 15px 20px; /* Increase padding */
-    transition: color 0.3s ease-in-out;
-}
 
     .navbar-nav .nav-link:hover {
         color: #0056b3; /* Darker blue on hover */
@@ -171,7 +163,42 @@
     .btn-light-nav:hover {
         background-color: #e7f1ff; /* Light blue on hover */
     }
+    .nav-link.active {
+        color: #191d8d !important; /* Highlight color */
+        font-weight: bold;
+    }
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentPage = window.location.pathname.split("/").pop(); // Get current page filename
+        let navLinks = document.querySelectorAll(".nav-link");
+        let dropdownItems = document.querySelectorAll(".dropdown-item");
+
+        function activateLink(link) {
+            navLinks.forEach(l => l.classList.remove("active")); // Remove active from all links
+            link.classList.add("active"); // Add active to clicked link
+        }
+
+        // Highlight main nav item if any dropdown item is clicked
+        dropdownItems.forEach(item => {
+            item.addEventListener("click", function () {
+                let parentNav = this.closest(".nav-item").querySelector(".nav-link");
+                activateLink(parentNav);
+                localStorage.setItem("activeNav", parentNav.textContent.trim()); // Save active item
+            });
+        });
+
+        // Restore active menu on page load
+        let savedActiveNav = localStorage.getItem("activeNav");
+        if (savedActiveNav) {
+            navLinks.forEach(link => {
+                if (link.textContent.trim() === savedActiveNav) {
+                    activateLink(link);
+                }
+            });
+        }
+    });
+</script>
 <!--ai start-->
         <section class="ai mb-3">
             <div class="container-fluid">
@@ -351,9 +378,7 @@ body {
                     <div class="footer-section">
                         <h3 class="title">Info</h3>
                         <ul>
-                            <li><a href="partners.html">Partners</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="resources/documentations.html">Resources</a></li>
                         </ul>
                     </div>
                 </div>
