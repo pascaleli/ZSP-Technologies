@@ -5,34 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="ZSP Technologies: Leading AI research and development the United States. Offering innovative solutions in AI, Big Data, IT consultancy, USSD, bulk sms, and software development for businesses across the United States and the World.">
-    <meta name="keywords" content="AI development United States, Big Data solutions, IT consultancy, mobile app development, business software, AI research, USSD, bulk sms, technology solutions America & Worldwide">
-
-    <meta property="og:title" content="ZSP Technologies | AI & Big Data Solutions in United States">
-    <meta property="og:description" content="Leading AI research and development company offering innovative solutions in AI, Big Data, IT consultancy, USSD, bulk sms and software development for businesses across the United States & the World.">
-    <meta property="og:image" content="https://zsp.com/assets/images/ZSP-LOGO.jpeg">
-    <meta property="og:url" content="https://www.zsp.com">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ZSP Technologies">
-
-    <meta name="twitter:card" content="https://zsp.com/assets/images/ZSP-LOGO.jpeg">
-    <meta name="twitter:title" content="ZSP Technologies | AI & Big Data Solutions">
-    <meta name="twitter:description" content="Pioneering AI research and development in the United States. Innovative solutions for businesses across the World. Offering innovative solutions in AI, Big Data, IT consultancy, USSD, bulk sms and software development.">
-    <meta name="twitter:image" content="https://zsp.com/assets/images/ZSP-LOGO.jpeg">
-    <meta name="twitter:site" content="@ZSP">
-
-    <meta name="author" content="ZSP Technologies Ltd">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-language" content="en-gh">
-
-    <link rel="canonical" href="blog.html">
-
-    <title>ZSP Technologies | AI & Big Data Solutions, ERP, Bulk SMS & USSD Solutions in the United States and across the World</title>
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/ZSP-LOGO.jpeg">
+        <title>Jobs & Careers | ZSP Technologies</title>
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="assets/images/ZSP-LOGO.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap-5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -43,15 +23,40 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/349ee9c857.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
-        
 
+        <style>
+        .modal-content {
+            background: linear-gradient(130.08deg, #282d21 0%, #090909 100%);
+            box-shadow: 0px 20px 40px #00000070;
+            border: 1px solid #3b3b3b;
+            color: #fff;
+        }
+
+        .modal-header {
+            color: #fecc02;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4HF59VK83"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C4HF59VK83');
+    </script>
+</head>
 <!--Page wrapper Section-->
 <div class="page-wrapper">
     <!-- <div id="loader">
@@ -83,8 +88,8 @@
                                  <ul class="dropdown-menu dropdown-menu-dark">
                                      <li><a class="dropdown-item" href="company/about.html">About Us</a></li>
                                      <li><a class="dropdown-item" href="company/team.html">Leadership</a></li>
-                                     <li><a class="dropdown-item" href="company/impact.html">Impact</a></li>
-                                 </ul>
+                        <!--   <li><a href="company/impact.html">Impact</a></li>--> 
+                    </ul>
                              </li>
                              <li class="nav-item dropdown">
                                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -165,6 +170,43 @@
          background-color: #e7f1ff; /* Light blue on hover */
      }
  </style>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let navLinks = document.querySelectorAll(".nav-link");
+        let dropdownItems = document.querySelectorAll(".dropdown-item");
+
+        function activateLink(link) {
+            navLinks.forEach(l => l.classList.remove("active")); // Remove active from all links
+            link.classList.add("active"); // Add active to clicked link
+            localStorage.setItem("activeNav", link.textContent.trim()); // Save active item
+        }
+
+        // Handle clicks on nav links (including "Jobs & Careers")
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                activateLink(this);
+            });
+        });
+
+        // Handle clicks on dropdown items
+        dropdownItems.forEach(item => {
+            item.addEventListener("click", function () {
+                let parentNav = this.closest(".nav-item").querySelector(".nav-link");
+                activateLink(parentNav);
+            });
+        });
+
+        // Restore active menu on page load
+        let savedActiveNav = localStorage.getItem("activeNav");
+        if (savedActiveNav) {
+            navLinks.forEach(link => {
+                if (link.textContent.trim() === savedActiveNav) {
+                    activateLink(link);
+                }
+            });
+        }
+    });
+</script>
 
         <!--Event hero section start-->
     <section class="blog">
@@ -785,8 +827,8 @@
                                 </li>
                                 <li class="nav-link mb-3"><a href="company/team.html">Leadership</a>
                                 </li>
-                                <li class="nav-link mb-3"><a href="company/impact.html">Impact</a>
-                                </li>
+                        <!--   <li><a href="company/impact.html">Impact</a></li>--> 
+                    </li>
                                 <li class="nav-link mb-3"><a href="contact.html">Lets
                                         talk</a></li>
                             </ul>
@@ -822,7 +864,7 @@
                     </div>
                     <div class="col-md-3 mb-4">
                         <div class="copyright">
-                            <span>© 2024 Developed by ZSP Technologies</span>
+                            <span>© 2025 Developed by ZSP Technologies</span>
                                                             <ul class="socials">
                                     <li class="nav-link"><a
                                             href="https://youtube.com/@zsptechnologies3546?si=JwStNtUw0TY6daCd"
